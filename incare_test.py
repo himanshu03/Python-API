@@ -1,51 +1,65 @@
+import json
+
 import pytest
 import requests
+import yaml
 from numpy.random.mtrand import randint
 
 import conftest
 
 role_id = 'global'
 group_id = 'global'
+user_id = 'global'
+
+with open("YML/common.yml", "r") as common:
+	test_data = yaml.load(common)
+
+with open("YML/project.yml", "r") as project:
+	project_data = yaml.load(project)
+
+with open('expected.json') as json_file:
+	expected_json = json.load(json_file)
 
 
-
-def test_incare_01_Assess_p1(Authorization, Base_Url):
-	tc_desc = "Get Total Assessments count for a user"
+def test_InCare_01_Assesment_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_01']['testcase']
 	tc_status = "FAIL"
 	tc_name = "TC01"
 	print(tc_desc + " is Executing")
 	try:
-		url = Base_Url + "incare/assessment/patients/P2913414/assessments/_count"
+		url = Base_Url + test_data['test_01']['uri'] + project_data[conftest.cmd_arg]["test_01"]
 		payload = {}
 		headers = {
 			'Authorization': Authorization
 		}
 		response = requests.request("GET", url, headers=headers, data=payload)
-		assert response.status_code == 200 , "No assessment is found on this user"
-		print(response.json())
+		assert response.status_code == 200
 		tc_status = "PASS"
+		print(response.json())
+
 	except Exception as e:
 		tc_status = "FAIL"
 		print(e)
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
+		print(tc_desc + " " + "Status:- " + tc_status + "\n")
 		conftest.updatedb(tc_name, tc_desc, tc_status)
 
 
-def test_incare_02_Assess_p1(Authorization, Base_Url):
-	tc_desc = "fetch summary of assessments attempted by patient"
+
+def test_InCare_02_assessment_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_02']['testcase']
 	tc_status = "FAIL"
 	tc_name = "TC02"
 	print(tc_desc + " is Executing")
 	try:
-		url = Base_Url + "incare/assessment/patients/P2913414/assessments/5e97fb4f7f9b710a5cab6b4e/_summary"
+		url = Base_Url + test_data['test_02']['uri'] + project_data[conftest.cmd_arg]["test_02"]
 		payload = {}
 		headers = {
 			'Authorization': Authorization
 		}
 		response = requests.request("GET", url, headers=headers, data=payload)
-		assert response.status_code == 200, "No assessments attempted by patient"
+		assert response.status_code == test_data['test_02']['status']
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
@@ -56,77 +70,218 @@ def test_incare_02_Assess_p1(Authorization, Base_Url):
 		conftest.updatedb(tc_name, tc_desc, tc_status)
 
 
-def test_incare_03_Assess_p1(Authorization, Base_Url):
-    tc_desc = "Get completed Assessments count for a user"
-    tc_status = "FAIL"
-    tc_name = "TC03"
-    print(tc_desc + " is Executing")
-    try:
-        url = Base_Url + "incare/assessment/patients/P2913414/assessments/_count"
-        payload = {}
-        headers = {
-            'Authorization': Authorization
-        }
-        response = requests.request("GET", url, headers=headers, data=payload)
-        assert response.status_code == 200, "No assessment is found on this user"
-        print(response.json())
-        tc_status = "PASS"
-    except Exception as e:
-        tc_status = "FAIL"
-        print(e)
-        raise
-    finally:
-        print(tc_desc + "Status:- " + tc_status)
-        conftest.updatedb(tc_name, tc_desc, tc_status)
+def test_InCare_03_assessment_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_03']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC02"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_03']['uri'] + project_data[conftest.cmd_arg]["test_03"]
+		payload = {}
+		headers = {
+			'Authorization': Authorization
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_03']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
 
 
-def test_incare_04_Assess_p1(Authorization, Base_Url):
-    tc_desc = "summary of all the corresponding assessments completed by patient"
-    tc_status = "FAIL"
-    tc_name = "TC04"
-    print(tc_desc + " is Executing")
-    try:
-        url = Base_Url + "incare/assessment/patients/P2913414/assessments/5e78bae37f9b715b42129f19/_fetch"
-        payload = {}
-        headers = {
-            'Authorization': Authorization
-        }
-        response = requests.request("GET", url, headers=headers, data=payload)
-        assert response.status_code == 200, "No assessments attempted by patient"
-        tc_status = "PASS"
-    except Exception as e:
-        tc_status = "FAIL"
-        print(e)
-        raise
-    finally:
-        print(tc_desc + "Status:- " + tc_status)
-        conftest.updatedb(tc_name, tc_desc, tc_status)
-
-def test_incare_05_Assess_p1(Authorization, Base_Url):
-        tc_desc = "Get Total Assessments count for a user"
-        tc_status = "FAIL"
-        tc_name = "TC05"
-        print(tc_desc + " is Executing")
-        try:
-            url = Base_Url + "incare/assessment/patients/P2913414/assessments/_count"
-            payload = {}
-            headers = {
-                'Authorization': Authorization
-            }
-            response = requests.request("GET", url, headers=headers, data=payload)
-            assert response.status_code == 200, "No assessment is found on this user"
-            print(response.json())
-            tc_status = "PASS"
-        except Exception as e:
-            tc_status = "FAIL"
-            print(e)
-            raise
-        finally:
-            print(tc_desc + "Status:- " + tc_status)
-            conftest.updatedb(tc_name, tc_desc, tc_status)
+def test_InCare_04_assessment_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_04']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC04"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_04']['uri'] + project_data[conftest.cmd_arg]["test_04"]
+		payload = {}
+		headers = {
+			'Authorization': Authorization
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_04']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
 
 
+def test_InCare_05_assessment_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_05']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC05"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_05']['uri'] + project_data[conftest.cmd_arg]["test_05"]
+		payload = {}
+		headers = {
+			'Authorization': Authorization
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_05']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
+
+
+def test_InCare_06_AdhocTask_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_06']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC06"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_06']['uri']
+		payload = {}
+		headers = {
+			'Authorization': Authorization
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == 200
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
+
+
+def test_InCare_07_AdhocTask_p1(Authorization, Base_Url):
+	global role_id
+	tc_desc = test_data['test_07']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC07"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_07']['uri']
+		name = "test" + str(randint(0, 999))
+
+
+		payload = "{\r\n\t\"name\": \"" + name + "\"\r\n}"
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json'
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_07']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
 
 
 
+def test_InCare_08_AdhocTask_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_08']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC08"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_08']['uri']
+		payload = "{\r\n\t\"name\": \"Adhoc Api Test5\",\r\n\t\"active\": false\r\n}"
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json'
+		}
+		response = requests.request("PATCH", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_08']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
+
+
+def test_InCare_09_AdhocTassk_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_09']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC09"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_09']['uri']
+		payload = "{\r\n\t\"adHocTaskIds\": [\"5ebd86917f9b711398ba4fbc\", \"5ebd86917f9b711398ba4fbe\"]\r\n}"
+		headers = {
+			'Authorization': Authorization,
+			'content-type': "application/json"
+		}
+		response = requests.request("PATCH", url, data=payload, headers=headers)
+		assert response.status_code == test_data['test_09']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
+
+def test_InCare_10_PatientNotes_p1(Authorization, Base_Url):
+	tc_desc = test_data['test_10']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC10"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_10']['uri'] + project_data[conftest.cmd_arg]["test_10"]
+		payload = {}
+		headers = {
+			'Authorization': Authorization
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == test_data['test_10']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
+
+
+def test_InCare_11_PatientNotes_p1(Authorization, Base_Url):
+	global role_id
+	tc_desc = test_data['test_11']['testcase']
+	tc_status = "FAIL"
+	tc_name = "TC11"
+	print(tc_desc + " is Executing")
+	try:
+		url = Base_Url + test_data['test_11']['uri']
+		payload = "{\"cardTypes\":[]}"
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json'
+		}
+		response = requests.request("POST", url, headers=headers, data = payload)
+		assert response.status_code == test_data['test_11']['status']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(e)
+		raise
+	finally:
+		print(tc_desc + "Status:- " + tc_status)
+		conftest.updatedb(tc_name, tc_desc, tc_status)
 

@@ -1,4 +1,11 @@
 {
-  "incare_test.py::test_InCare_Assessments_01_p1": true,
-  "incare_test.py::test_incare_02_Assess_p1": true
+  "incare_test.py": true,
+  "incare_test.py::test_InCare_08_AdhocTask_p1": true,
+  "incare_test.py::test_InCare_08_p1": true,
+  "incare_test.py::test_InCare_09_assessment_p1": true,
+  "incare_test.py::test_InCare_10_PatientNote_p1": true,
+  "incare_test.py::test_InCare_11_AdhocTask_p1": true,
+  "incare_test.py::test_InCare_11_AdhocTassk_p1": true,
+  "incare_test.py::test_InCare_11_PatientNotes_p1": true,
+  "incare_test.py::test_InCore_02_assessment_p1": true
 }
