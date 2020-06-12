@@ -10,6 +10,10 @@ Orlando:
    test_09: " "
    test_10: "/P2913414/patient_notes/5edddc3d7f9b716ca403a5c7"
    test_11: "/P2913414/timeline/_search"
+   test_12: "/P27122836/assessments/_count"
+   test_13: "/P4526206/health_modules"
+   test_14: "/P4526206/health_modules"
+   test_15: "/P4526206/health_modules"
 
 #Complete_Health:
 #    user_id_tc_03: "user_1"

@@ -1,12 +1,12 @@
 import json
 import os
+import time
 from datetime import datetime
 
 import pandas as pd
 import pytest
 import requests
-import sqlalchemy as sqlalchemy
-import time
+import sqlalchemy
 
 rs_session = 'global'
 conf = 'global'
@@ -67,9 +67,9 @@ def Base_Url():
 
 
 #Script for updating DB
-def updatedb(tc_name,tc_desc, tc_status):
-    _sql = "INSERT INTO test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration) VALUES " \
-           "('{}', '{}','{}', '{}','{}', '{}');".format(module_name, tc_name,tc_desc,tc_status,ts, time.time() - start_time)
+def updatedb(tc_name,tc_desc, tc_status, tc_priority):
+    _sql = "INSERT INTO test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration, priority) VALUES " \
+           "('{}', '{}','{}', '{}', '{}', '{}', '{}');".format(module_name, tc_name,tc_desc,tc_status,ts, round(time.time() - start_time, 4), tc_priority)
     print("SQL:- {} \n".format(_sql))
     try:
         pd.read_sql_query(_sql, rs_session)
@@ -83,5 +83,3 @@ def pytest_addoption(parser):
 def pytest_configure(config):
     global option
     option = config.option
-
-

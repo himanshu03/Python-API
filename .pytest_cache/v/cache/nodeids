@@ -21,5 +21,9 @@
   "incare_test.py::test_InCare_08_AdhocTask_p1",
   "incare_test.py::test_InCare_09_AdhocTassk_p1",
   "incare_test.py::test_InCare_10_PatientNotes_p1",
-  "incare_test.py::test_InCare_11_PatientNotes_p1"
+  "incare_test.py::test_InCare_11_PatientNotes_p1",
+  "incare_test.py::test_InCare_12_Assesment_p1",
+  "incare_test.py::test_InCare_13_CareProtocol_p1",
+  "incare_test.py::test_InCare_15_CareProtocol_p1",
+  "incare_test.py::test_InCare_14_CareProtocol_p1"
 ]
