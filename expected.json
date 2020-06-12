@@ -1,0 +1,130 @@
+{"User_Org":[
+        {
+            "displayName": "Rural",
+            "value": "rural"
+        },
+        {
+            "displayName": "Urban",
+            "value": "urban"
+        },
+        {
+            "displayName": "Both",
+            "value": "both"
+        },
+        {
+            "displayName": "N/A",
+            "value": "N/A"
+        }
+],
+"Sec_Type": [
+        {
+            "displayName": "Health Coach",
+            "value": "health_coach"
+        },
+        {
+            "displayName": "Health Coach Asst/Navigator",
+            "value": "health_coach_asst_navigator"
+        },
+        {
+            "displayName": "Social Worker",
+            "value": "social_worker"
+        },
+        {
+            "displayName": "Pharmacist",
+            "value": "pharmacist"
+        },
+        {
+            "displayName": "Hospice/Palliative",
+            "value": "hospice_palliative"
+        },
+        {
+            "displayName": "Home Health",
+            "value": "home_health"
+        },
+        {
+            "displayName": "Community Health Worker",
+            "value": "community_health_worker"
+        },
+        {
+            "displayName": "BPCI A",
+            "value": "bpci_a"
+        },
+        {
+            "displayName": "Other",
+            "value": "other"
+        }
+    ],
+"Loc_Type": [
+        {
+            "displayName": "Acute Urban",
+            "value": "acute_urban"
+        },
+        {
+            "displayName": "Acute Rural",
+            "value": "acute_rural"
+        },
+        {
+            "displayName": "Ambulatory Urban",
+            "value": "ambulatory_urban"
+        },
+        {
+            "displayName": "Ambulatory Rural",
+            "value": "ambulatory_rural"
+        },
+        {
+            "displayName": "Post Acute",
+            "value": "post_acute"
+        },
+        {
+            "displayName": "BPCIA",
+            "value": "acute_urban"
+        },
+        {
+            "displayName": "N/A",
+            "value": "N/A"
+        }
+    ],
+"Questions":[
+            {
+                "id": "1",
+                "question": "What is your mother's name?"
+            },
+            {
+                "id": "2",
+                "question": "What was the name of your elementary / primary school?"
+            },
+            {
+                "id": "3",
+                "question": "What is your pet's name?"
+            }
+        ],
+"User_Type": [
+        {
+            "displayName": "Admin Staff",
+            "value": "Admin Staff"
+        },
+        {
+            "displayName": "Data Staff",
+            "value": "Data Staff"
+        },
+        {
+            "displayName": "CM Leadership",
+            "value": "Chapter Staff"
+        },
+        {
+            "displayName": "CM Staff",
+            "value": "Health Coach"
+        },
+        {
+            "displayName": "Physician Leadership",
+            "value": "Provider"
+        },
+        {
+            "displayName": "Other",
+            "value": "Other"
+        },
+        {
+            "displayName": "Test",
+            "value": "Test"
+        }
+    ]}
