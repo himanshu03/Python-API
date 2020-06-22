@@ -90,4 +90,11 @@ test_15:
       status: 200
       count: 6
 
+test_16:
+      testcase: " To verify user is able to see the list of protocols on clicking the Assign Care protocol button."
+      uri: "/incare/patients"
+      message: " User is not able to view care protocol"
+      status: 200
+      count: 18
+
 

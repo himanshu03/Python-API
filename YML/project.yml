@@ -14,6 +14,7 @@ Orlando:
    test_13: "/P4526206/health_modules"
    test_14: "/P4526206/health_modules"
    test_15: "/P4526206/health_modules"
+   test_16: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
 
 #Complete_Health:
 #    user_id_tc_03: "user_1"
