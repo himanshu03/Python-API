@@ -157,7 +157,7 @@ def test_InCare_Care_Management_06(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("POST", url, headers=headers, data=payload)
-		assert response.status_code == 200
+		assert response.status_code == 200 or 201
 		assert(response.json()['text']) == test_data['test_06']['text']
 		assert (response.json()['noteType']) == test_data['test_06']['noteType']
 		tc_status = "PASS"
@@ -185,7 +185,7 @@ def test_InCare_Care_Management_07(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("POST", url, headers=headers, data=payload)
-		assert response.status_code == 200
+		assert response.status_code == 200 or 201
 		assert(response.json()['text']) == test_data['test_07']['text']
 		assert (response.json()['metadata']['visitType'])== test_data['test_07']['visitType']
 		assert (response.json()['noteType']) == test_data['test_07']['noteType']
@@ -213,7 +213,7 @@ def test_InCare_Care_Management_08(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("POST", url, headers=headers, data=payload)
-		assert response.status_code == 200
+		assert response.status_code == 200 or 201
 		assert(response.json()['text']) == test_data['test_08']['text']
 		assert (response.json()['noteType']) == test_data['test_08']['noteType']
 		tc_status = "PASS"
@@ -233,8 +233,8 @@ def test_InCare_Care_Management_09(Authorization, Base_Url,set_cookie):
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
-		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_09"]
-		payload = "{\n    \"rawAdHocTaskId\": \"5ec62c548815c21e329a4554\",\n    \"scheduledTime\": 1590982200000,\n    \"note\": \"API Health Check New Adhoc Task\",\n    \"comment\": \"\",\n    \"assignee\": {\n        \"health_coach_id\": \"74bbb531-ba77-4f24-b57e-c25c4c79f917\"\n    }\n}"
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_09"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_09"]["payload"]
 		headers = {
 			'Authorization': Authorization,
 			'Content-Type': 'application/json',
@@ -264,14 +264,14 @@ def test_InCare_Care_Management_10(Authorization, Base_Url,set_cookie):
 	print(tc_desc + " is Executing")
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_06"]
-		payload = "{\n    \"type\": \"LETTER_SENT\",\n    \"text\": \"API Health Check for Letter\",\n    \"sendDate\": 1590949800000\n}"
+		payload = "{\n    \"type\": \"LETTER_SENT\",\n    \"text\": \"API Health Check for Letter\",\n    \"sendDate\": 1592937000000\n}"
 		headers = {
 			'Authorization': Authorization,
 			'Content-Type': 'application/json',
 			'Cookie': set_cookie
 		}
 		response = requests.request("POST", url, headers=headers, data=payload)
-		assert response.status_code == 200
+		assert response.status_code == 200 or 201
 		assert(response.json()['text']) == test_data['test_10']['text']
 		assert (response.json()['noteType']) == test_data['test_10']['noteType']
 		tc_status = "PASS"
@@ -283,7 +283,7 @@ def test_InCare_Care_Management_10(Authorization, Base_Url,set_cookie):
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_11(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol in All Activity Filter"
 	tc_status = "FAIL"
@@ -310,7 +310,7 @@ def test_InCare_Care_Management_11(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_12(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol Unit in All Activity Filter"
 	tc_status = "FAIL"
@@ -337,7 +337,7 @@ def test_InCare_Care_Management_12(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_13(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
@@ -364,7 +364,7 @@ def test_InCare_Care_Management_13(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_14(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Notes in All Activity Filter"
 	tc_status = "FAIL"
@@ -391,7 +391,7 @@ def test_InCare_Care_Management_14(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_15(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select call in All Activity Filter"
 	tc_status = "FAIL"
@@ -418,7 +418,7 @@ def test_InCare_Care_Management_15(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_16(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Visit in All Activity Filter"
 	tc_status = "FAIL"
@@ -445,7 +445,7 @@ def test_InCare_Care_Management_16(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_17(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Letters in All Activity Filter"
 	tc_status = "FAIL"
@@ -471,7 +471,7 @@ def test_InCare_Care_Management_17(Authorization, Base_Url,set_cookie):
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_18(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Encounters in All Activity Filter"
 	tc_status = "FAIL"
