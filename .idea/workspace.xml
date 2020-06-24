@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42052cd6-45e7-4502-b71d-eceba321ac84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Care_Management/care_management_project.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Care_Management/care_management_project.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Care_Management/incare_care_management_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Care_Management/incare_care_management_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra.conf" beforeDir="false" afterPath="$PROJECT_DIR$/infra.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infra.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="453">
+              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -102,10 +99,10 @@
         <option value="$PROJECT_DIR$/incare_test.py" />
         <option value="$PROJECT_DIR$/Care_Management/care_management_common.yml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/infra.conf" />
         <option value="$PROJECT_DIR$/Care_Management/care_management_project.yml" />
         <option value="$PROJECT_DIR$/Care_Management/incare_care_management_test.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/infra.conf" />
       </list>
     </option>
   </component>
@@ -469,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infra.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="453">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
         </state>
       </provider>
     </entry>
