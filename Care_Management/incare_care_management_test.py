@@ -337,7 +337,7 @@ def test_InCare_Care_Management_12(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_13(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
