@@ -103,7 +103,7 @@ def updatedb(tc_name,tc_desc, tc_status, tc_priority):
 
 #Scripts for passing arguments
 def pytest_addoption(parser):
-    parser.addoption("--arg", action="store", default="CH", help="Option for making some stuff")
+    parser.addoption("--arg", action="store", default="Orlando", help="Option for making some stuff")
 
 def pytest_configure(config):
     global option
