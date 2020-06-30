@@ -92,7 +92,7 @@ def set_cookie(scope='session'):
 
 #Script for updating DB
 def updatedb(tc_name,tc_desc, tc_status, tc_priority):
-    _sql = "INSERT INTO iq.test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration, priority) VALUES " \
+    _sql = "INSERT INTO test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration, priority) VALUES " \
            "('{}', '{}','{}', '{}', '{}', '{}', '{}');".format(module_name, tc_name,tc_desc,tc_status,ts, round(time.time() - start_time, 4), tc_priority)
     print("SQL:- {} \n".format(_sql))
     try:
