@@ -1,0 +1,26 @@
+Orlando:
+   test_01:
+      uri: "/users/fec94f1c-4e57-4d25-a0d4-03ef9344a2c5/todos/_count"
+      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+   test_02:
+      uri: "/users/fec94f1c-4e57-4d25-a0d4-03ef9344a2c5/todos/_search"
+      payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+
+
+StLukes:
+   test_01:
+      uri: "/users/020915f2-4be6-4a93-9605-fd30c97c50b3/todos/_count"
+      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+   test_02:
+      uri: "/users/020915f2-4be6-4a93-9605-fd30c97c50b3/todos/_search"
+      payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+
+
+CH:
+   test_01:
+     uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_count"
+     payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+   test_02:
+      uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_search"
+      payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+

@@ -21,6 +21,8 @@
   "Care_Management/incare_care_management_test.py::test_InCare_01_Assesment_p1": true, 
   "Csat/incare_care_management_test.py": true, 
   "Worklist/incare_care_management_test.py": true, 
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_03": true, 
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_04": true, 
   "incare_test.py::test_InCare_01_Assesment_p1": true, 
   "incare_test.py::test_InCare_02_assessment_p1": true, 
   "incare_test.py::test_InCare_03_assessment_p1": true, 
