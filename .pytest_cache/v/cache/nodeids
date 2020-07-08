@@ -1,20 +1,4 @@
 [
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_02", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_03", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_04", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_05", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_06", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_07", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_08", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_09", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_10", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_11", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_12", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_13", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_14", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_15", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_16", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_17", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_18"
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_01", 
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_02"
 ]

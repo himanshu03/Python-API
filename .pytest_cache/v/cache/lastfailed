@@ -1,7 +1,6 @@
 {
+  "Adherence_Review/incare_adherence_review_test.py::test_InCare_Adherence_Review_01": true, 
   "Adherence_Review/incare_adherence_review_test.py::test_InCare_Assessment_03": true, 
-  "Assessment/incare_assessment_test.py::test_InCare_Assessment_01": true, 
-  "Assessment/incare_assessment_test.py::test_InCare_Assessment_02": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_02": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_03": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_04": true, 
