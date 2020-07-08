@@ -527,7 +527,7 @@ def test_InCare_Care_Management_19(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_20(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify edit button on closed care protocol"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC02"
+	tc_name = "Care_Management_TC20"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -552,7 +552,7 @@ def test_InCare_Care_Management_20(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_21(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the status of completed Engagement/Task should become editable, if the user re-open any Care protocol"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC03"
+	tc_name = "Care_Management_TC21"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -577,7 +577,7 @@ def test_InCare_Care_Management_21(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_22(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_Adhoc_Tasks"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC04"
+	tc_name = "Care_Management_TC22"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -602,7 +602,7 @@ def test_InCare_Care_Management_22(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_23(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify User is able to click on send button after typing the message"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC05"
+	tc_name = "Care_Management_TC23"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -628,7 +628,7 @@ def test_InCare_Care_Management_23(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_24(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to Add call Note"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC06"
+	tc_name = "Care_Management_TC24"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -656,7 +656,7 @@ def test_InCare_Care_Management_24(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_25(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the functionality of Export icon"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC07"
+	tc_name = "Care_Management_TC25"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -684,7 +684,7 @@ def test_InCare_Care_Management_25(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_26(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Note Ad-hoc Task"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC08"
+	tc_name = "Care_Management_TC26"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -712,7 +712,7 @@ def test_InCare_Care_Management_26(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_27(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create New Task"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC09"
+	tc_name = "Care_Management_TC27"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -742,7 +742,7 @@ def test_InCare_Care_Management_27(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_48(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol Unit in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC12"
+	tc_name = "Care_Management_TC48"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -769,7 +769,7 @@ def test_InCare_Care_Management_48(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_49(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC13"
+	tc_name = "Care_Management_TC49"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -796,7 +796,7 @@ def test_InCare_Care_Management_49(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_50(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Notes in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC14"
+	tc_name = "Care_Management_TC50"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -823,7 +823,7 @@ def test_InCare_Care_Management_50(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_51(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select call in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC15"
+	tc_name = "Care_Management_TC51"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -850,7 +850,7 @@ def test_InCare_Care_Management_51(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_52(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Visit in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC16"
+	tc_name = "Care_Management_TC52"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -877,7 +877,7 @@ def test_InCare_Care_Management_52(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_53(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Letters in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC17"
+	tc_name = "Care_Management_TC53"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
@@ -903,7 +903,7 @@ def test_InCare_Care_Management_53(Authorization, Base_Url,set_cookie):
 def test_InCare_Care_Management_54(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Encounters in All Activity Filter"
 	tc_status = "FAIL"
-	tc_name = "Care_Management_TC18"
+	tc_name = "Care_Management_TC54"
 	tc_priority = "Normal"
 	print(tc_desc + " is Executing")
 	try:
