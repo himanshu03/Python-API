@@ -1,6 +1,5 @@
 [
-  "Worklist/incare_worklist_test.py::test_InCare_Worklist_01", 
-  "Worklist/incare_worklist_test.py::test_InCare_Worklist_02", 
-  "Worklist/incare_worklist_test.py::test_InCare_Worklist_03", 
-  "Worklist/incare_worklist_test.py::test_InCare_Worklist_04"
+  "Adherence_Review/incare_adherence_review_test.py::test_InCare_Adherence_Review_01", 
+  "Adherence_Review/incare_adherence_review_test.py::test_InCare_Assessment_02", 
+  "Adherence_Review/incare_adherence_review_test.py::test_InCare_Assessment_03"
 ]
