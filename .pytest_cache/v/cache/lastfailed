@@ -20,8 +20,6 @@
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_17": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_18": true, 
   "Care_Management/incare_care_management_test.py::test_InCare_01_Assesment_p1": true, 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01": true, 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_02": true, 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_03": true, 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_04": true, 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_05": true, 

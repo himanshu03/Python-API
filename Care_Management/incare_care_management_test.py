@@ -41,6 +41,7 @@ def test_InCare_Care_Management_01(Authorization, Base_Url,set_cookie):
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+@pytest.mark.sanity
 def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_health_modules"
 	tc_status = "FAIL"
