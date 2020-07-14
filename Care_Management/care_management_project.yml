@@ -21,7 +21,7 @@ Orlando:
 
 
 StLukes:
-   test_01: "/health_modules?filters=%7B%22type%22%3A%22activity_bundle%22%2C%22isActive%22%3Atrue%7D"
+   test_01: "/health_modules?filters=%7B%22type%22%3A%22activity_bundle%22%2C%22isActive%22%3Atrue%7"
    test_02: "/P212/health_modules"
    test_03: "/P212/goals"
    test_04: "/P212/adhoc_tasks"
@@ -42,7 +42,7 @@ StLukes:
 
 
 CH:
-   test_01: "/health_modules?filters=%7B%22type%22%3A%22activity_bundle%22%2C%22isActive%22%3Atrue%7D"
+   test_01: "/health_modules?filters=%7B%22type%22%3A%22activity_bundle%22%2C%22isActive%22%3Atrue%7"
    test_02: "/P71144140865/health_modules"
    test_03: "/P71144140865/goals"
    test_04: "/P71144140865/adhoc_tasks"
