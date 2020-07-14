@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-4.6.10, py-1.8.1, pluggy-0.13.1 -- c:\python27\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\I0307\git\incareapisautomation
+plugins: forked-1.1.3, ordering-0.6, xdist-1.32.0, yaml-1.2.1
+collecting ... collected 34 items / 32 deselected / 2 selected
+
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01 FAILED [ 50%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_02 PASSED [100%]
+
+================================== FAILURES ===================================
+_______________________ test_InCare_Care_Management_01 ________________________
+Care_Management\incare_care_management_test.py:34: in test_InCare_Care_Management_01
+    assert response.status_code == 200 , test_data['test_01']['message']
+E   AssertionError: Not able to navigate to Care Management
+E   assert 500 == 200
+E     -500
+E     +200
+---------------------------- Captured stdout call -----------------------------
+To verify the navigation to Care managementStatus:- FAIL
+
+
+============= 1 failed, 1 passed, 32 deselected in 15.36 seconds ==============

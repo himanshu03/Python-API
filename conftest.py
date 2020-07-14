@@ -1,5 +1,6 @@
 import json
 import os
+import logging
 import time
 from datetime import datetime
 
@@ -94,11 +95,11 @@ def set_cookie(scope='session'):
 def updatedb(tc_name,tc_desc, tc_status, tc_priority):
     _sql = "INSERT INTO iq.test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration, priority) VALUES " \
            "('{}', '{}','{}', '{}', '{}', '{}', '{}');".format(module_name, tc_name,tc_desc,tc_status,ts, round(time.time() - start_time, 4), tc_priority)
-    print("SQL:- {} \n".format(_sql))
+    # print("SQL:- {} \n".format(_sql))
     try:
         pd.read_sql_query(_sql, rs_session)
     except:
-        print(tc_desc+" DB Status Updated")
+        print("\n")
 
 
 #Scripts for passing arguments
@@ -108,3 +109,35 @@ def pytest_addoption(parser):
 def pytest_configure(config):
     global option
     option = config.option
+
+def init_logging():
+    logfile_path = os.getcwd()+"/Logs/log_file.log"
+    logging.basicConfig(filename=logfile_path,
+                        format='%(levelname)s %(asctime)s %(message)s',
+                        filemode='w')
+    # Creating an object
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    logger.info("Info Logs ")
+    return logger
+
+def pytest_sessionfinish(session, exitstatus):
+    with open('Logs/log_file.log', 'r') as file:
+        logs = file.read().replace('\\n', '\n')
+
+    result = logs.find("collecting")
+    text = logs[result:-1]
+
+    url = conf[cmd_arg]["chat_url"]
+    data_payload = {
+        "text": text
+    }
+    data_payload = json.dumps(data_payload)
+    headers = {'Content-Type': 'application/json'}
+    requests.post(url, headers=headers, data=data_payload)
+    print('script end')
+
+
+
+
+

@@ -1,4 +1,11 @@
 test_care: "/incare/patients"
+test_01:
+      message: "Not able to navigate to Care Management"
+
+test_02:
+      message: ""
+
+
 
 test_06:
       text: "API Health check for call note"

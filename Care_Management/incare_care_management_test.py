@@ -15,13 +15,13 @@ with open("Care_Management/care_management_project.yml", "r") as project:
 with open('Care_Management/care_management_expected.json') as json_file:
 	expected_json = json.load(json_file)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_01(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the navigation to Care management"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC01"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_01"]
 		payload = {}
@@ -31,11 +31,11 @@ def test_InCare_Care_Management_01(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("GET", url, headers=headers, data=payload)
-		assert response.status_code == 200
+		assert response.status_code == 200 , test_data['test_01']['message']
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		# print(e)
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
@@ -47,7 +47,7 @@ def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC02"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+	#print(tc_desc + " is Executing")
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_02"]
 		payload = {}
@@ -61,7 +61,7 @@ def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		# print(e)
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
