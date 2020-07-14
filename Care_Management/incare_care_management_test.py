@@ -85,6 +85,7 @@ def test_InCare_Care_Management_03(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
+		print(e)
 		print(test_data['test_03']['message'])
 		raise
 	finally:
