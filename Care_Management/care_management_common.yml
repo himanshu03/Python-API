@@ -3,6 +3,15 @@ test_01:
       message: "Not able to navigate to Care Management"
 
 test_02:
+      message: "Activities not available in care management_health_modules"
+
+test_03:
+      message: "Care management goals are not visible"
+
+test_04:
+      message: ""
+
+test_05:
       message: ""
 
 

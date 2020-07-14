@@ -57,7 +57,7 @@ def Authorization(scope='session'):
         'postgres://' + user + ':' + password + '@' + host + ':' + port + '/'
         + db)
     rs_session = engine.connect()
-    print("RS Connection successful")
+    # print("RS Connection successful")
 
     return Authorization
 

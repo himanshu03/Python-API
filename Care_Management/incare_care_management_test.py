@@ -31,23 +31,24 @@ def test_InCare_Care_Management_01(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("GET", url, headers=headers, data=payload)
-		assert response.status_code == 200 , test_data['test_01']['message']
+		assert response.status_code == 200
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		# print(e)
+		print(test_data['test_01']['message'])
+
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-@pytest.mark.sanity
+
 def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_health_modules"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC02"
 	tc_priority = "Normal"
-	#print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_02"]
 		payload = {}
@@ -61,18 +62,20 @@ def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		# print(e)
+		print(test_data['test_02']['message'])
+
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+@pytest.mark.sanity
 def test_InCare_Care_Management_03(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_goals"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC03"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_03"]
 		payload = {}
@@ -86,7 +89,8 @@ def test_InCare_Care_Management_03(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_03']['message'])
+
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
