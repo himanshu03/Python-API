@@ -1,5 +1,5 @@
-CH:
- test_01: "/incare/patients/P71144140865//medication_adherence/reviews"
+test_01:
+      message: "Not able to navigate to Adherence Review"
 
 
 

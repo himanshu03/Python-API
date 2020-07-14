@@ -1,7 +1,15 @@
 test_care: "/incare/assessment/patients"
 
+test_01:
+     message: "Not able to export Assessment"
+
+test_02:
+     message: "Not able to verify the completed date of the available Completed Assessment"
+
+
 test_03:
      count: "0"
+     message: "User is able to search assessment with Invalid text"
 
 
 

@@ -85,18 +85,18 @@ def test_InCare_Care_Management_03(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
 		print(test_data['test_03']['message'])
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+@pytest.mark.sanity
 def test_InCare_Care_Management_04(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_Adhoc_Tasks"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC04"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_04"]
 		payload = {}
@@ -110,12 +110,12 @@ def test_InCare_Care_Management_04(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_04']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+@pytest.mark.sanity
 def test_InCare_Care_Management_05(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_legacy_timeline"
 	tc_status = "FAIL"
@@ -135,19 +135,19 @@ def test_InCare_Care_Management_05(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_05']['message'])
 		raise
 	finally:
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_06(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to Add call Note"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC06"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_06"]
 		payload = "{\n    \"type\": \"CALL\",\n    \"text\": \"API Health check for call note\"\n}"
@@ -163,13 +163,12 @@ def test_InCare_Care_Management_06(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_06']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_07(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Visit Ad-hoc Task"
 	tc_status = "FAIL"
@@ -192,12 +191,12 @@ def test_InCare_Care_Management_07(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_07']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+@pytest.mark.sanity
 def test_InCare_Care_Management_08(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Note Ad-hoc Task"
 	tc_status = "FAIL"
@@ -219,19 +218,18 @@ def test_InCare_Care_Management_08(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_08']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_09(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create New Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC09"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_09"]["uri"]
 		payload = project_data[conftest.cmd_arg]["test_09"]["payload"]
@@ -249,19 +247,18 @@ def test_InCare_Care_Management_09(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_09']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_10(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Letter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC010"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_06"]
 		payload = "{\n    \"type\": \"LETTER_SENT\",\n    \"text\": \"API Health Check for Letter\",\n    \"sendDate\": 1592937000000\n}"
@@ -277,19 +274,18 @@ def test_InCare_Care_Management_10(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_10']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_11(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC11"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_11"]
 		payload = {}
@@ -303,20 +299,19 @@ def test_InCare_Care_Management_11(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_11']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_12(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol Unit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC12"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_12"]
 		payload = {}
@@ -330,20 +325,18 @@ def test_InCare_Care_Management_12(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_12']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_13(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC13"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_13"]
 		payload = {}
@@ -357,20 +350,19 @@ def test_InCare_Care_Management_13(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_13']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_14(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Notes in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC14"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_14"]
 		payload = {}
@@ -384,20 +376,19 @@ def test_InCare_Care_Management_14(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_14']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_15(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select call in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC15"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_15"]
 		payload = {}
@@ -411,20 +402,19 @@ def test_InCare_Care_Management_15(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_15']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_16(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Visit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC16"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]
 		payload = {}
@@ -438,20 +428,19 @@ def test_InCare_Care_Management_16(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_16']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_17(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Letters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC17"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]
 		payload = {}
@@ -465,19 +454,18 @@ def test_InCare_Care_Management_17(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_17']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Care_Management_18(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Encounters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC18"
 	tc_priority = "Normal"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_18"]
 		payload = {}
@@ -491,10 +479,9 @@ def test_InCare_Care_Management_18(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_18']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 

@@ -15,13 +15,13 @@ with open("Worklist/worklist_project.yml", "r") as project:
 with open('Worklist/worklist_expected.json') as json_file:
 	expected_json = json.load(json_file)
 
-
+@pytest.mark.sanity
 def test_InCare_Worklist_01(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify that the User can see his daily progress on User's Workqueue under Todos"
 	tc_status = "FAIL"
 	tc_name = "Worklist_TC01"
 	tc_priority = "High"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_01"]["uri"]
 		payload = project_data[conftest.cmd_arg]["test_01"]["payload"]
@@ -39,19 +39,18 @@ def test_InCare_Worklist_01(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_01']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-
+@pytest.mark.sanity
 def test_InCare_Worklist_02(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available scheduled task for current date"
 	tc_status = "FAIL"
 	tc_name = "Worklist_TC02"
 	tc_priority = "High"
-	print(tc_desc + " is Executing")
+
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_02"]["uri"]
 		payload = project_data[conftest.cmd_arg]["test_02"]["payload"]
@@ -69,10 +68,9 @@ def test_InCare_Worklist_02(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(e)
+		print(test_data['test_02']['message'])
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 

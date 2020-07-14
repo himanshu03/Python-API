@@ -1,5 +1,13 @@
 test_care: "/incare/worklist"
 
+test_01:
+     message: "User is not able to see his daily progress on User's Workqueue under Todos"
+
+test_02:
+     message: "User is not able to verify the available scheduled task for current date"
+
+test_03:
+     message: "User is not able to the available scheduled task for current date"
 test_04:
      count: "0"
 
