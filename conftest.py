@@ -57,7 +57,7 @@ def Authorization(request, scope='session'):
     token = response.json()["token"]
     Authorization = "a " + token
 
-    set_cookie = response.headers.get('set-cookie').split(';')[0]
+    # set_cookie = response.headers.get('set-cookie').split(';')[0]
 
     # Redshift details
     user = conf[cmd_arg]["redshift"]["user"]
@@ -78,6 +78,41 @@ def Authorization(request, scope='session'):
 def Base_Url():
     Base_Url = conf[cmd_arg]["baseurl"]
     return Base_Url
+
+@pytest.fixture
+def set_cookie(request, scope='session'):
+    global rs_session
+    global conf
+    global ts
+    global module_name
+    global cmd_arg
+    global start_time
+    global set_cookie
+    global payload
+
+    start_time = time.time()
+
+    with open(os.getcwd() + "/infra.conf") as config_file:
+        config_file.seek(0)
+        conf = json.load(config_file)
+
+    cmd_arg = option.arg
+    url = conf[cmd_arg]["authurl"]
+    module_name = conf[cmd_arg]["module_name"]
+    try:
+        data_payload = encrypt_json({"email":conf[cmd_arg][request.param]["user_name"],"password": conf[cmd_arg][request.param]["pwd"]})
+        payload = json.dumps(data_payload)
+    except:
+        data_payload = encrypt_json({"email": conf[cmd_arg]["user_name"], "password": conf[cmd_arg]["pwd"]})
+        payload = json.dumps(data_payload)
+
+    # TODO: Integrate with decrypt JSON code
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    response = requests.request("POST", url, headers=headers, data=payload)
+    set_cookie = response.headers.get('set-cookie').split(';')[0]
+    return set_cookie
 
 
 #Script for updating DB
