@@ -21,7 +21,7 @@ def test_InCare_Assessment_01(Authorization, Base_Url,set_cookie):
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC01"
 	tc_priority = "High"
-	print(tc_desc + " is Executing")
+	# print(tc_desc + " is Executing")
 	try:
 		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_01"]
 		payload = {}
@@ -71,7 +71,7 @@ def test_InCare_Assessment_02(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-@pytest.mark.sanity
+
 def test_InCare_Assessment_03(Authorization, Base_Url,set_cookie):
 	tc_desc = "Search a assessment with invalid text"
 	tc_status = "FAIL"
