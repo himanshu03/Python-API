@@ -8,14 +8,6 @@ test_02:
 test_03:
       message: "Care management goals are not visible"
 
-test_04:
-      message: ""
-
-test_05:
-      message: ""
-
-
-
 test_06:
       text: "API Health check for call note"
       noteType: "CALL"
