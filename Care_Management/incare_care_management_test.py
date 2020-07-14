@@ -36,10 +36,8 @@ def test_InCare_Care_Management_01(Authorization, Base_Url,set_cookie):
 	except Exception as e:
 		tc_status = "FAIL"
 		print(test_data['test_01']['message'])
-
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
@@ -63,10 +61,8 @@ def test_InCare_Care_Management_02(Authorization, Base_Url,set_cookie):
 	except Exception as e:
 		tc_status = "FAIL"
 		print(test_data['test_02']['message'])
-
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
@@ -90,10 +86,8 @@ def test_InCare_Care_Management_03(Authorization, Base_Url,set_cookie):
 	except Exception as e:
 		tc_status = "FAIL"
 		print(test_data['test_03']['message'])
-
 		raise
 	finally:
-		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 def test_InCare_Care_Management_04(Authorization, Base_Url,set_cookie):
