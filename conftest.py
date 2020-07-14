@@ -79,30 +79,6 @@ def Base_Url():
     Base_Url = conf[cmd_arg]["baseurl"]
     return Base_Url
 
-@pytest.fixture
-def set_cookie(scope='session'):
-    global rs_session
-    global conf
-    global ts
-    global module_name
-    global cmd_arg
-    global start_time
-    start_time = time.time()
-    with open(os.getcwd() + "/infra.conf") as config_file:
-        config_file.seek(0)
-        conf = json.load(config_file)
-    cmd_arg = option.arg
-    url = conf[cmd_arg]["authurl"]
-    module_name = conf[cmd_arg]["module_name"]
-    payload = conf[cmd_arg]["payload"]
-    # TODO: Integrate with decrypt JSON code
-    headers = {
-        'Content-Type': 'application/json'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    set_cookie = response.headers.get('set-cookie').split(';')[0]
-    return set_cookie
-
 
 #Script for updating DB
 def updatedb(tc_name,tc_desc, tc_status, tc_priority):
@@ -132,21 +108,21 @@ def init_logging():
     logger.info("Info Logs ")
     return logger
 
-#Script for connection with ES and sql query execution
-def execute_sql_query(sqlstring):
-    try:
-        url = "http://10.7.6.85:9200/_sql"
-        payload = sqlstring
-        headers = {
-            'Content-Type': 'text/plain'
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
-        assert response.status_code == 200
-        return response.json()
-    except Exception as e:
-        raise
-    finally:
-        print("End")
+# #Script for connection with ES and sql query execution
+# def execute_sql_query(sqlstring):
+#     try:
+#         url = "http://10.7.6.85:9200/_sql"
+#         payload = sqlstring
+#         headers = {
+#             'Content-Type': 'text/plain'
+#         }
+#         response = requests.request("POST", url, headers=headers, data=payload)
+#         assert response.status_code == 200
+#         return response.json()
+#     except Exception as e:
+#         raise
+#     finally:
+#         print("End")
 
 
 #Script for converting credentials to hexadecimal
