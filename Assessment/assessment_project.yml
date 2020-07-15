@@ -8,11 +8,11 @@ Orlando:
 
 
 StLukes:
-   test_01: "/P212/assessments/5f060c0a8815c22a652dbe3b/_export"
+   test_01: "/P248/assessments/5f060c0a8815c22a652dbe3b/_export"
    test_02:
       completedOn: "1594231830935"
    test_03:
-      uri: "/P212/assessments/_search"
+      uri: "/P248/assessments/_search"
       payload: "{\r\n    \"searchTerm\": \"tes\",\r\n    \"status\": \"COMPLETED\"\r\n}"
 
 
