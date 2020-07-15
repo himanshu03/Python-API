@@ -1,4 +1,8 @@
 [
+  "Adherence_Review/incare_adherence_review_test.py::test_InCare_Adherence_Review_01", 
+  "Assessment/incare_assessment_test.py::test_InCare_Assessment_01", 
+  "Assessment/incare_assessment_test.py::test_InCare_Assessment_02", 
+  "Assessment/incare_assessment_test.py::test_InCare_Assessment_03", 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01", 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_02", 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_03", 
@@ -32,5 +36,7 @@
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_51", 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_52", 
   "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_53", 
-  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_54"
+  "Care_Management/incare_care_management_test.py::test_InCare_Care_Management_54", 
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_01", 
+  "Worklist/incare_worklist_test.py::test_InCare_Worklist_02"
 ]

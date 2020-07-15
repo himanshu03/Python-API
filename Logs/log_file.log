@@ -3,21 +3,42 @@ platform win32 -- Python 2.7.13, pytest-4.6.10, py-1.8.1, pluggy-0.13.1 -- c:\py
 cachedir: .pytest_cache
 rootdir: C:\Users\I0307\git\incareapisautomation
 plugins: forked-1.1.3, ordering-0.6, xdist-1.32.0, yaml-1.2.1
-collecting ... collected 34 items / 32 deselected / 2 selected
+collecting ... collected 40 items / 17 deselected / 23 selected
 
-Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01 FAILED [ 50%]
-Care_Management/incare_care_management_test.py::test_InCare_Care_Management_02 PASSED [100%]
+Adherence_Review/incare_adherence_review_test.py::test_InCare_Adherence_Review_01 FAILED [  4%]
+Assessment/incare_assessment_test.py::test_InCare_Assessment_01 PASSED   [  8%]
+Assessment/incare_assessment_test.py::test_InCare_Assessment_02 PASSED   [ 13%]
+Assessment/incare_assessment_test.py::test_InCare_Assessment_03 PASSED   [ 17%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_01 PASSED [ 21%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_03 PASSED [ 26%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_04 PASSED [ 30%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_05 PASSED [ 34%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_06 PASSED [ 39%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_07 PASSED [ 43%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_08 PASSED [ 47%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_09 PASSED [ 52%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_10 PASSED [ 56%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_11 PASSED [ 60%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_12 PASSED [ 65%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_13 PASSED [ 69%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_14 PASSED [ 73%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_15 PASSED [ 78%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_16 PASSED [ 82%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_17 PASSED [ 86%]
+Care_Management/incare_care_management_test.py::test_InCare_Care_Management_18 PASSED [ 91%]
+Worklist/incare_worklist_test.py::test_InCare_Worklist_01 PASSED         [ 95%]
+Worklist/incare_worklist_test.py::test_InCare_Worklist_02 PASSED         [100%]script end
+
 
 ================================== FAILURES ===================================
-_______________________ test_InCare_Care_Management_01 ________________________
-Care_Management\incare_care_management_test.py:34: in test_InCare_Care_Management_01
-    assert response.status_code == 200 , test_data['test_01']['message']
-E   AssertionError: Not able to navigate to Care Management
-E   assert 500 == 200
-E     -500
+_______________________ test_InCare_Adherence_Review_01 _______________________
+Adherence_Review\incare_adherence_review_test.py:34: in test_InCare_Adherence_Review_01
+    assert response.status_code == 200
+E   assert 404 == 200
+E     -404
 E     +200
 ---------------------------- Captured stdout call -----------------------------
-To verify the navigation to Care managementStatus:- FAIL
+Not able to navigate to Adherence Review
 
 
-============= 1 failed, 1 passed, 32 deselected in 15.36 seconds ==============
+============ 1 failed, 22 passed, 17 deselected in 169.33 seconds =============

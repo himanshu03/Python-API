@@ -57,7 +57,7 @@ def Authorization(request, scope='session'):
     token = response.json()["token"]
     Authorization = "a " + token
 
-    # set_cookie = response.headers.get('set-cookie').split(';')[0]
+
 
     # # Redshift details
     # user = conf[cmd_arg]["redshift"]["user"]
@@ -132,16 +132,6 @@ def pytest_configure(config):
     global option
     option = config.option
 
-def init_logging():
-    logfile_path = os.getcwd()+"/Logs/log_file.log"
-    logging.basicConfig(filename=logfile_path,
-                        format='%(levelname)s %(asctime)s %(message)s',
-                        filemode='w')
-    # Creating an object
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    logger.info("Info Logs ")
-    return logger
 
 # #Script for connection with ES and sql query execution
 # def execute_sql_query(sqlstring):
