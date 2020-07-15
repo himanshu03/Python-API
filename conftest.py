@@ -171,19 +171,3 @@ def encrypt_json(decrypted_json):
     })
   return final_json
 
-def pytest_sessionfinish(session, exitstatus):
-    with open('Logs/log_file.log', 'r') as file:
-        logs = file.read().replace('\\n', '\n')
-
-    result = logs.find("collecting")
-    text = logs[result:-1]
-
-    url = conf[cmd_arg]["chat_url"]
-    data_payload = {
-        "text": text
-    }
-    data_payload = json.dumps(data_payload)
-    headers = {'Content-Type': 'application/json'}
-    requests.post(url, headers=headers, data=data_payload)
-    print('script end')
-
