@@ -15,7 +15,7 @@ with open("Adherence_Review/adherence_review_project.yml", "r") as project:
 with open('Adherence_Review/adherence_review_expected.json') as json_file:
 	expected_json = json.load(json_file)
 
-
+@pytest.mark.sanity
 def test_InCare_Adherence_Review_01(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the navigation to Adherence reviews"
 	tc_status = "FAIL"
