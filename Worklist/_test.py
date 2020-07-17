@@ -16,7 +16,7 @@ with open('Worklist/worklist_expected.json') as json_file:
 	expected_json = json.load(json_file)
 
 @pytest.mark.sanity
-def test_InCare_Worklist_Todo(Authorization, Base_Url,set_cookie):
+def test_Worklist_Todo(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify that the User can see his daily progress on User's Workqueue under Todos"
 	tc_status = "FAIL"
 	tc_name = "Worklist_TC01"
@@ -45,7 +45,7 @@ def test_InCare_Worklist_Todo(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Worklist_Scheduled_Task(Authorization, Base_Url,set_cookie):
+def test_Worklist_Scheduled_Task(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available scheduled task for current date"
 	tc_status = "FAIL"
 	tc_name = "Worklist_TC02"
@@ -75,7 +75,7 @@ def test_InCare_Worklist_Scheduled_Task(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Worklist_03(Authorization, Base_Url,set_cookie):
+def test_Worklist_03(Authorization, Base_Url,set_cookie):
 	tc_desc = "Submit assessment without any response"
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC03"
@@ -103,7 +103,7 @@ def test_InCare_Worklist_03(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Worklist_04(Authorization, Base_Url,set_cookie):
+def test_Worklist_04(Authorization, Base_Url,set_cookie):
 	tc_desc = "Search a assessment with invalid text"
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC04"

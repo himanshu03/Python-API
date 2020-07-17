@@ -41,7 +41,7 @@ def test_InCare_Navigation_To_Care_Management(Authorization, Base_Url,set_cookie
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_Health_Modules(Authorization, Base_Url,set_cookie):
+def test_Health_Modules(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_health_modules"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC02"
@@ -66,7 +66,7 @@ def test_InCare_Care_Management_Health_Modules(Authorization, Base_Url,set_cooki
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Goals(Authorization, Base_Url,set_cookie):
+def test_Goals(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_goals"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC03"
@@ -91,7 +91,7 @@ def test_InCare_Care_Management_Goals(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Adhoc_Tasks(Authorization, Base_Url,set_cookie):
+def test_Adhoc_Tasks(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_Adhoc_Tasks"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC04"
@@ -116,7 +116,7 @@ def test_InCare_Care_Management_Adhoc_Tasks(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_legacy_timeline(Authorization, Base_Url,set_cookie):
+def test_legacy_timeline(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_legacy_timeline"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC05"
@@ -142,7 +142,7 @@ def test_InCare_Care_Management_legacy_timeline(Authorization, Base_Url,set_cook
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Add_call_Note(Authorization, Base_Url,set_cookie):
+def test_Add_call_Note(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to Add call Note"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC06"
@@ -169,7 +169,7 @@ def test_InCare_Care_Management_Add_call_Note(Authorization, Base_Url,set_cookie
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Visit_Adhoc_Task(Authorization, Base_Url,set_cookie):
+def test_Visit_Adhoc_Task(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Visit Ad-hoc Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC07"
@@ -197,7 +197,7 @@ def test_InCare_Care_Management_Visit_Adhoc_Task(Authorization, Base_Url,set_coo
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Note_Adhoc_Task(Authorization, Base_Url,set_cookie):
+def test_Note_Adhoc_Task(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Note Ad-hoc Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC08"
@@ -224,7 +224,7 @@ def test_InCare_Care_Management_Note_Adhoc_Task(Authorization, Base_Url,set_cook
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_create_New_Task(Authorization, Base_Url,set_cookie):
+def test_create_New_Task(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create New Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC09"
@@ -253,7 +253,7 @@ def test_InCare_Care_Management_create_New_Task(Authorization, Base_Url,set_cook
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_create_Letter(Authorization, Base_Url,set_cookie):
+def test_create_Letter(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Letter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC010"
@@ -280,7 +280,7 @@ def test_InCare_Care_Management_create_Letter(Authorization, Base_Url,set_cookie
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Care_Protocol(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Care_Protocol(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC11"
@@ -306,7 +306,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Care_Protocol(Authori
 
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Care_Protocol_Unit(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Care_Protocol_Unit(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol Unit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC12"
@@ -331,7 +331,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Care_Protocol_Unit(Au
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Task(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Task(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC13"
@@ -357,7 +357,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Task(Authorization, B
 
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Notes(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Notes(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Notes in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC14"
@@ -383,7 +383,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Notes(Authorization, 
 
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Call(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Call(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select call in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC15"
@@ -409,7 +409,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Call(Authorization, B
 
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Visit(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Visit(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Visit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC16"
@@ -435,7 +435,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Visit(Authorization, 
 
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Letters(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Letters(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Letters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC17"
@@ -460,7 +460,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Letters(Authorization
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_All_Activity_Filter_Select_Encounters(Authorization, Base_Url,set_cookie):
+def test_All_Activity_Filter_Select_Encounters(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Encounters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC18"
@@ -485,7 +485,7 @@ def test_InCare_Care_Management_All_Activity_Filter_Select_Encounters(Authorizat
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_reedit_completed_task(Authorization, Base_Url,set_cookie):
+def test_reedit_completed_task(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify user is able to re-edit the completed task (completed after editing)"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC019"
@@ -511,7 +511,7 @@ def test_InCare_Care_Management_reedit_completed_task(Authorization, Base_Url,se
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_edit_button(Authorization, Base_Url,set_cookie):
+def test_edit_button(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify edit button on closed care protocol"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC20"
@@ -537,7 +537,7 @@ def test_InCare_Care_Management_edit_button(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Editable_completed_task_engagement(Authorization, Base_Url,set_cookie):
+def test_Editable_completed_task_engagement(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the status of completed Engagement/Task should become editable, if the user re-open any Care protocol"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC21"
@@ -563,7 +563,7 @@ def test_InCare_Care_Management_Editable_completed_task_engagement(Authorization
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Activities_in_Adhoc_Tasks(Authorization, Base_Url,set_cookie):
+def test_Activities_in_Adhoc_Tasks(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the available activities in care management_Adhoc_Tasks"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC22"
@@ -589,7 +589,7 @@ def test_InCare_Care_Management_Activities_in_Adhoc_Tasks(Authorization, Base_Ur
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Care_Management_Send_Button(Authorization, Base_Url,set_cookie):
+def test_Send_Button(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify User is able to click on send button after typing the message"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC23"
@@ -615,7 +615,7 @@ def test_InCare_Care_Management_Send_Button(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_24(Authorization, Base_Url,set_cookie):
+def test_24(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to Add call Note"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC24"
@@ -643,7 +643,7 @@ def test_InCare_Care_Management_24(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_25(Authorization, Base_Url,set_cookie):
+def test_25(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the functionality of Export icon"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC25"
@@ -671,7 +671,7 @@ def test_InCare_Care_Management_25(Authorization, Base_Url,set_cookie):
 		print(tc_desc + "Status:- " + tc_status)
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
-def test_InCare_Care_Management_26(Authorization, Base_Url,set_cookie):
+def test_26(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create Note Ad-hoc Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC26"
@@ -699,7 +699,7 @@ def test_InCare_Care_Management_26(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_27(Authorization, Base_Url,set_cookie):
+def test_27(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the User is able to create New Task"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC27"
@@ -729,7 +729,7 @@ def test_InCare_Care_Management_27(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_48(Authorization, Base_Url,set_cookie):
+def test_48(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Care Protocol Unit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC48"
@@ -756,7 +756,7 @@ def test_InCare_Care_Management_48(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Care_Management_49(Authorization, Base_Url,set_cookie):
+def test_49(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Task in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC49"
@@ -783,7 +783,7 @@ def test_InCare_Care_Management_49(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Care_Management_50(Authorization, Base_Url,set_cookie):
+def test_50(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Notes in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC50"
@@ -810,7 +810,7 @@ def test_InCare_Care_Management_50(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Care_Management_51(Authorization, Base_Url,set_cookie):
+def test_51(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select call in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC51"
@@ -837,7 +837,7 @@ def test_InCare_Care_Management_51(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Care_Management_52(Authorization, Base_Url,set_cookie):
+def test_52(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Visit in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC52"
@@ -864,7 +864,7 @@ def test_InCare_Care_Management_52(Authorization, Base_Url,set_cookie):
 
 
 
-def test_InCare_Care_Management_53(Authorization, Base_Url,set_cookie):
+def test_53(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Letters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC53"
@@ -890,7 +890,7 @@ def test_InCare_Care_Management_53(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
-def test_InCare_Care_Management_54(Authorization, Base_Url,set_cookie):
+def test_54(Authorization, Base_Url,set_cookie):
 	tc_desc = "Select Encounters in All Activity Filter"
 	tc_status = "FAIL"
 	tc_name = "Care_Management_TC54"

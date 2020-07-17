@@ -16,7 +16,7 @@ with open('Assessment/assessment_expected.json') as json_file:
 	expected_json = json.load(json_file)
 
 @pytest.mark.sanity
-def test_InCare_Export_Assessment(Authorization, Base_Url,set_cookie):
+def test_Export_Assessment(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the Export functionality for the assessment which will include responses and risk/score"
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC01"
@@ -41,7 +41,7 @@ def test_InCare_Export_Assessment(Authorization, Base_Url,set_cookie):
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 @pytest.mark.sanity
-def test_InCare_Assessment_Date(Authorization, Base_Url,set_cookie):
+def test_Assessment_Date(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the Completed date of the available Completed Assessment"
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC02"
@@ -68,7 +68,7 @@ def test_InCare_Assessment_Date(Authorization, Base_Url,set_cookie):
 
 
 @pytest.mark.sanity
-def test_InCare_Search_Assessment(Authorization, Base_Url,set_cookie):
+def test_Search_Assessment(Authorization, Base_Url,set_cookie):
 	tc_desc = "Search a assessment with invalid text"
 	tc_status = "FAIL"
 	tc_name = "Assessment_TC03"
