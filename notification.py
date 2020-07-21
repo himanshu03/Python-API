@@ -13,7 +13,7 @@ with open('Logs/log_file.log', 'r') as file:
 
 result = logs.find("collecting")
 
-text = logs[result:-1]
+text = "*`InCare Sanity Results`*\n" +logs[result:-1]
 
 url= conf[sys.argv[1]]["chat_url"]
 payload = {
