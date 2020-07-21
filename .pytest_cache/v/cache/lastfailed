@@ -18,6 +18,7 @@
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_16": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_17": true, 
   "Assessment/incare_assessment_test.py::test_InCare_Care_Management_18": true, 
+  "Care_Management/CM_test.py::test_All_Activity_Filter_Select_Care_Protocol": true, 
   "Care_Management/incare_care_management_test.py::test_InCare_01_Assesment_p1": true, 
   "Csat/incare_care_management_test.py": true, 
   "Worklist/incare_care_management_test.py": true, 
