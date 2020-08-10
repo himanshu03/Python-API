@@ -6,14 +6,11 @@ from numpy.random.mtrand import randint
 
 import conftest
 
-with open("Adherence_Review/adherence_review_common.yml", "r") as common:
+with open("Ymls/adherence_review_common.yml", "r") as common:
 	test_data = yaml.load(common)
 
-with open("Adherence_Review/adherence_review_project.yml", "r") as project:
+with open("Ymls/adherence_review_project.yml", "r") as project:
 	project_data = yaml.load(project)
-
-with open('Adherence_Review/adherence_review_expected.json') as json_file:
-	expected_json = json.load(json_file)
 
 
 def test_navigation_to_Adherence_reviews(Authorization, Base_Url,set_cookie):

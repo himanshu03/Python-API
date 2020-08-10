@@ -6,16 +6,15 @@ from numpy.random.mtrand import randint
 
 import conftest
 
-with open("Worklist/worklist_common.yml", "r") as common:
+with open("Ymls/worklist_common.yml", "r") as common:
 	test_data = yaml.load(common)
 
-with open("Worklist/worklist_project.yml", "r") as project:
+with open("Ymls/worklist_project.yml", "r") as project:
 	project_data = yaml.load(project)
 
-with open('Worklist/worklist_expected.json') as json_file:
-	expected_json = json.load(json_file)
 
-@pytest.mark.sanity
+
+
 def test_Worklist_Todo(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify that the User can see his daily progress on User's Workqueue under Todos"
 	tc_status = "FAIL"
