@@ -17,6 +17,9 @@ Orlando:
    test_16: "/P12910841/legacy_timeline?type=Visits"
    test_17: "/P12910841/legacy_timeline?type=Letters"
    test_18: "/P12910841/legacy_timeline?type=Encounters"
+   test_19:
+      uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
+      count: 22
 
 
 
@@ -39,6 +42,9 @@ StLukes:
    test_16: "/P266/legacy_timeline?type=Visits"
    test_17: "/P266/legacy_timeline?type=Letters"
    test_18: "/P266/legacy_timeline?type=Encounters"
+   test_19:
+      uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
+      count: 14
 
 
 CH:
@@ -59,6 +65,9 @@ CH:
    test_16: "/P71144140865/legacy_timeline?type=Visits"
    test_17: "/P71144140865/legacy_timeline?type=Letters"
    test_18: "/P71144140865/legacy_timeline?type=Encounters"
+   test_19:
+      uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
+      count: 8
 
 
 

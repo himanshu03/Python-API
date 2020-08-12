@@ -64,3 +64,6 @@ test_17:
 
 test_18:
       message: "User is not able to select Encounters in All Activity Filter"
+
+test_19:
+      message: "Not able to find Assign care protocol Tab"

@@ -1,3 +1,21 @@
 {
+  "Tests/care_management_test.py::test_Add_call_Note": true, 
+  "Tests/care_management_test.py::test_Adhoc_Tasks": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Call": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Care_Protocol": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Care_Protocol_Unit": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Encounters": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Letters": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Notes": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Task": true, 
+  "Tests/care_management_test.py::test_All_Activity_Filter_Select_Visit": true, 
+  "Tests/care_management_test.py::test_Goals": true, 
+  "Tests/care_management_test.py::test_Health_Modules": true, 
+  "Tests/care_management_test.py::test_Navigation_To_Care_Management": true, 
+  "Tests/care_management_test.py::test_Note_Adhoc_Task": true, 
+  "Tests/care_management_test.py::test_Visit_Adhoc_Task": true, 
+  "Tests/care_management_test.py::test_create_Letter": true, 
+  "Tests/care_management_test.py::test_create_New_Task": true, 
+  "Tests/care_management_test.py::test_legacy_timeline": true, 
   "notification.py": true
 }

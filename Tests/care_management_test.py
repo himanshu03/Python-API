@@ -12,8 +12,8 @@ with open("Ymls/care_management_common.yml", "r") as common:
 with open("Ymls/care_management_project.yml", "r") as project:
 	project_data = yaml.load(project)
 
-
-
+with open('Ymls/care_management_expected.yml') as expected:
+    expected_data = yaml.load(expected)
 
 def test_Navigation_To_Care_Management(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the navigation to Care management"
@@ -30,6 +30,7 @@ def test_Navigation_To_Care_Management(Authorization, Base_Url,set_cookie):
 			'Cookie': set_cookie
 		}
 		response = requests.request("GET", url, headers=headers, data=payload)
+		print(response.json())
 		assert response.status_code == 200
 		tc_status = "PASS"
 	except Exception as e:
@@ -483,3 +484,39 @@ def test_All_Activity_Filter_Select_Encounters(Authorization, Base_Url,set_cooki
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
+@pytest.mark.sanity
+def test_Assign_Module(Authorization, Base_Url,set_cookie):
+	tc_desc = "Check assign module fuctionality"
+	tc_status = "FAIL"
+	tc_name = "Care_Management_TC019"
+	tc_priority = "Normal"
+	actual=[]
+	expected=[]
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_19"]['uri']
+		payload = {}
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("GET", url, headers=headers, data=payload)
+		assert response.status_code == 200
+		assert response.json()['count'] ==project_data[conftest.cmd_arg]["test_19"]['count']
+		care_protocol_names =  expected_data[conftest.cmd_arg]['care_protocols']
+		data = response.json()
+		for hit in data['hits']:
+			actual.append(hit['name'])
+		for item in care_protocol_names:
+			expected.append(item['name'])
+		assert actual == expected
+		tc_status = "PASS"
+
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_19']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
