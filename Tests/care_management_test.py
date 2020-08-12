@@ -520,3 +520,30 @@ def test_Assign_Module(Authorization, Base_Url,set_cookie):
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+@pytest.mark.sanity
+def test_Assign_Care_Protocol(Authorization, Base_Url,set_cookie):
+	tc_desc = "To verify Assign Fuctionality"
+	tc_status = "FAIL"
+	tc_name = "Care_Management_TC20"
+	tc_priority = "Normal"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_20"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_20"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 200 or 201
+		assert(response.json()['healthModules']['healthModuleId']) ==  project_data[conftest.cmd_arg]["test_20"]["healthModuleId"]
+		assert(response.json()['healthModules']['isActive'])== project_data[conftest.cmd_arg]["test_20"]["isActive"]
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_20']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
