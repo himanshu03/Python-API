@@ -142,15 +142,12 @@ StLukes:
             "type": "health_module"
         },
         {
-            "name": "Complex care Protocol - BSL",
-            "category": "Disease Management",
-            "type": "health_module"
+          "name": "DSRIP Assist",
+          "category": "Transition",
+          "type": "health_module"
         },
-        {
-            "name": "DSRIP Assist",
-            "category": "Transition",
-            "type": "health_module"
-        },
+
+
         {
             "name": "BPCIA Care Coordination",
             "category": "Transition",
@@ -172,10 +169,11 @@ StLukes:
             "type": "health_module"
         },
         {
-            "name": "BPCIA Care Coordination - STJ",
-            "category": "Transition",
-            "type": "health_module"
+          "name": "BPCIA Care Coordination - STJ",
+          "category": "Transition",
+          "type": "health_module"
         },
+
         {
             "name": "DSRIP 30 Days Assist",
             "category": "Transition",
@@ -185,6 +183,16 @@ StLukes:
             "name": "DSRIP 90 Days Assist",
             "category": "Transition",
             "type": "health_module"
+        },
+        {
+          "name": "DSRIP Assist",
+          "category": "Transition",
+          "type": "health_module"
+        },
+        {
+          "name": "Complex Care Protocol - BSL",
+          "category": "Transition",
+          "type": "health_module"
         }
         ]
 
@@ -230,6 +238,11 @@ CH:
         "name": "ED Visit Follow-up",
         "category": "Transition",
         "type": "health_module"
+    },
+    {
+      "name": "Complex care Protocol - BSL",
+      "category": "Disease Management",
+      "type": "health_module"
     }
     ]
 

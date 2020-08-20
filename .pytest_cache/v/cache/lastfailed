@@ -9,7 +9,6 @@
   "Tests/care_management_test.py::test_All_Activity_Filter_Select_Notes": true, 
   "Tests/care_management_test.py::test_All_Activity_Filter_Select_Task": true, 
   "Tests/care_management_test.py::test_All_Activity_Filter_Select_Visit": true, 
-  "Tests/care_management_test.py::test_Assign_Module": true, 
   "Tests/care_management_test.py::test_Goals": true, 
   "Tests/care_management_test.py::test_Health_Modules": true, 
   "Tests/care_management_test.py::test_Navigation_To_Care_Management": true, 

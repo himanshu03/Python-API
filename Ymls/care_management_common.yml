@@ -70,3 +70,6 @@ test_19:
 
 test_20:
       message: "Not able to Assign care protocol"
+
+test_21:
+      message: "Not able to refer and assign care protocol"
