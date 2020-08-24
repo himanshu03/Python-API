@@ -5,6 +5,42 @@ Orlando:
    test_02:
       uri: "/users/fec94f1c-4e57-4d25-a0d4-03ef9344a2c5/todos/_search"
       payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+   test_05:
+      uri : "/referrals/received"
+      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+   test_06:
+      uri: "/referrals/_bulk"
+      payload: "{\"assignedTo\":\"cfafb957-779e-468a-bd17-4044d113c5c1\",\"todoIdList\":[\"5f3e2d8d7f9b717433127e0f\"],\"message\":\"\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+   test_07:
+      uri: "/referrals/received"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_08:
+      uri: "/referrals/sent"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_09:
+      uri: "/referrals/received"
+      payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_10:
+      uri: "/referrals/sent"
+      payload: "{\"searchTerm\":\"\",\"status\":\"CANCELED\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"fullName\",\"order\":\"DESC\"}}"
+   test_11:
+      uri: "/referrals/sent"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"}}"
+   test_12:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"COVID\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"from\":1597602600000,\"to\":1597688999999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
+   test_13:
+      uri: "/referrals/5de4b4ac7f9b716a409f0e1c/message"
+      payload: "{\"message\":\"Please accept this task on Tuesday111\"}"
+   test_14:
+      uri: "/users/5dcc8bf8-1ccb-439a-bf48-9ff8e7e4bf3b/referrals/_bulk"
+      payload: "{\"assignedTo\":\"cfafb957-779e-468a-bd17-4044d113c5c1\",\"todoIdList\":[\"5ed6247b7f9b71255e921b78\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+   test_15:
+      uri: "/users/cfafb957-779e-468a-bd17-4044d113c5c1/referrals/5dde52cf7f9b7139cc3e19b4/_accept"
+      payload: ""
+   test_16:
+      uri: "/users/cfafb957-779e-468a-bd17-4044d113c5c1/referrals/5f3fa4537f9b71741965c132/_decline"
+      payload: ""
 
 
 StLukes:
@@ -14,6 +50,14 @@ StLukes:
    test_02:
       uri: "/users/020915f2-4be6-4a93-9605-fd30c97c50b3/todos/_search"
       payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+   test_05:
+      uri: "/referrals/received"
+      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+   test_06:
+      uri: "/todos/_count"
+      payload: "{\"from\":1597861800000,\"to\":1597948199999,\"excludeReferredTodos\":true,\"careProtocolIdList\":[]}"
+
+
 
 
 CH:
@@ -23,4 +67,7 @@ CH:
    test_02:
       uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_search"
       payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+   test_05:
+      uri: "/referrals/received"
+      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
 
