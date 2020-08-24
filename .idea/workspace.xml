@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="42052cd6-45e7-4502-b71d-eceba321ac84" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="42052cd6-45e7-4502-b71d-eceba321ac84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/care_management_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/care_management_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ymls/care_management_common.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ymls/care_management_common.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ymls/care_management_expected.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ymls/care_management_expected.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ymls/care_management_project.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ymls/care_management_project.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ymls/worklist_common.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ymls/worklist_common.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> origin
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/care_management_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="512" column="12" selection-start-line="512" selection-start-column="12" selection-end-line="512" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+>>>>>>> origin
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -14,9 +48,85 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>module_name</find>
+      <find>project_data</find>
+      <find>InCore</find>
+      <find>status_code</find>
+      <find>test_11:</find>
+      <find>TC02</find>
+      <find>POST</find>
+      <find>&quot;POST&quot;</find>
+      <find>mark</find>
+      <find>sanity</find>
+      <find>Goals</find>
+      <find>Not able to find Assign care protocol Tab</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/incore.py" />
+        <option value="$PROJECT_DIR$/YML/common.yml" />
+        <option value="$PROJECT_DIR$/YML/project.yml" />
+        <option value="$PROJECT_DIR$/expected.json" />
+        <option value="$PROJECT_DIR$/Assessemnt/incare_assessment_test.py" />
+        <option value="$PROJECT_DIR$/incare_test.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Assessment/care_management_common.yml" />
+        <option value="$PROJECT_DIR$/Assessment/care_management_project.yml" />
+        <option value="$PROJECT_DIR$/Csat/incare_care_management_test.py" />
+        <option value="$PROJECT_DIR$/Assessment/assessment_expected.json" />
+        <option value="$PROJECT_DIR$/Worklist/worklist_expected.json" />
+        <option value="$PROJECT_DIR$/Worklist/worklist_project.yml" />
+        <option value="$PROJECT_DIR$/Adherence_review/incare_adherence_review_test.py" />
+        <option value="$PROJECT_DIR$/Adherence_Review/adherence_review_expected.json" />
+        <option value="$PROJECT_DIR$/Care_Management/care_management_common.yml" />
+        <option value="$PROJECT_DIR$/Adherence_Review/adherence_review_common.yml" />
+        <option value="$PROJECT_DIR$/Assessment/assessment_common.yml" />
+        <option value="$PROJECT_DIR$/Worklist/worklist_common.yml" />
+        <option value="$PROJECT_DIR$/Logs/log_file.log" />
+        <option value="$PROJECT_DIR$/script.sh" />
+        <option value="$PROJECT_DIR$/Adherence_Review/incare_adherence_review_test.py" />
+        <option value="$PROJECT_DIR$/Assessment/incare_assessment_test.py" />
+        <option value="$PROJECT_DIR$/Worklist/incare_worklist_test.py" />
+        <option value="$PROJECT_DIR$/Care_Management/incare_care_management_test.py" />
+        <option value="$PROJECT_DIR$/Worklist/_test.py" />
+        <option value="$PROJECT_DIR$/Care_Management/_test.py" />
+        <option value="$PROJECT_DIR$/Adherence_Review/_test.py" />
+        <option value="$PROJECT_DIR$/Assessment/_test.py" />
+        <option value="$PROJECT_DIR$/Adherence_Review/AR_test.py" />
+        <option value="$PROJECT_DIR$/Care_Management/CM_test.py" />
+        <option value="$PROJECT_DIR$/notification.py" />
+        <option value="$PROJECT_DIR$/Adherence_Review/adherence_review_project.yml" />
+        <option value="$PROJECT_DIR$/Care_Management/care_management_project.yml" />
+        <option value="$PROJECT_DIR$/Assessment/Assesment_test.py" />
+        <option value="$PROJECT_DIR$/Assessment/assessment_project.yml" />
+        <option value="$PROJECT_DIR$/Tests/adherence_review_test.py" />
+        <option value="$PROJECT_DIR$/Tests/assessment_test.py" />
+        <option value="$PROJECT_DIR$/Tests/worklist_test.py" />
+        <option value="$PROJECT_DIR$/Ymls/care_management_expected.json" />
+        <option value="$PROJECT_DIR$/Expected_jsons/care_management.json" />
+        <option value="$PROJECT_DIR$/infra.conf" />
+        <option value="$PROJECT_DIR$/Ymls/care_management_common.yml" />
+        <option value="$PROJECT_DIR$/Ymls/care_management_expected.yml" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/Ymls/care_management_project.yml" />
+        <option value="$PROJECT_DIR$/Ymls/worklist_common.yml" />
+        <option value="$PROJECT_DIR$/Tests/care_management_test.py" />
+      </list>
+    </option>
+  </component>
+>>>>>>> origin
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
@@ -27,6 +137,38 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="incareapisautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="incareapisautomation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="incareapisautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="incareapisautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="incareapisautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="incareapisautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="Ymls" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+>>>>>>> origin
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -218,6 +360,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598007955815" />
     <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1598007955815" />
     <state x="421" y="176" width="598" height="490" key="find.popup" timestamp="1598007961041">
@@ -226,5 +369,163 @@
     <state x="421" y="176" width="598" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1598007961041" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1598007955815" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1598007955815" />
+=======
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" />
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assessment/incare_care_management_test.py" />
+    <entry file="file://$PROJECT_DIR$/Assessment/care_management_common.yml" />
+    <entry file="file://$PROJECT_DIR$/Assessment/care_management_project.yml" />
+    <entry file="file://$PROJECT_DIR$/Csat/incare_care_management_test.py" />
+    <entry file="file://$PROJECT_DIR$/Worklist/worklist_expected.json" />
+    <entry file="file://$PROJECT_DIR$/Assessment/assessment_expected.json" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/adherence_review_expected.json" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/adherence_review_common.yml" />
+    <entry file="file://$PROJECT_DIR$/Assessment/assessment_common.yml" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/incare_adherence_review_test.py" />
+    <entry file="file://$PROJECT_DIR$/Worklist/incare_worklist_test.py" />
+    <entry file="file://$PROJECT_DIR$/Assessment/incare_assessment_test.py" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/incare_care_management_test.py" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/test.py" />
+    <entry file="file://$PROJECT_DIR$/Worklist/test.py" />
+    <entry file="file://$PROJECT_DIR$/Assessment/test.py" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/_test.py" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/_test.py" />
+    <entry file="file://$PROJECT_DIR$/Worklist/_test.py" />
+    <entry file="file://$PROJECT_DIR$/Assessment/_test.py" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/AR_test.py" />
+    <entry file="file://$PROJECT_DIR$/Worklist/Worklist_test.py" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/CM_test.py" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/care_management_common.yml" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/care_management_expected.json" />
+    <entry file="file://$PROJECT_DIR$/Worklist/worklist_common.yml" />
+    <entry file="file://$PROJECT_DIR$/Worklist/worklist_project.yml" />
+    <entry file="file://$PROJECT_DIR$/Care_Management/care_management_project.yml" />
+    <entry file="file://$PROJECT_DIR$/Adherence_Review/adherence_review_project.yml" />
+    <entry file="file://$PROJECT_DIR$/Assessment/Assesment_test.py" />
+    <entry file="file://$PROJECT_DIR$/Assessment/assessment_project.yml" />
+    <entry file="file://$PROJECT_DIR$/Tests/adherence_review_test.py.py" />
+    <entry file="file://$PROJECT_DIR$/YML/project.yml" />
+    <entry file="file://$PROJECT_DIR$/YML/common.yml" />
+    <entry file="file://$PROJECT_DIR$/incare_test.py" />
+    <entry file="file://$PROJECT_DIR$/Logs/log_file.log">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/adherence_review_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/care_management_expected.json" />
+    <entry file="file://$PROJECT_DIR$/Tests/assessment_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Expected_jsons/care_management.json" />
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infra.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/worklist_project.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/care_management_expected.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/worklist_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/worklist_common.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/care_management_project.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ymls/care_management_common.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="68" column="57" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/care_management_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="512" column="12" selection-start-line="512" selection-start-column="12" selection-end-line="512" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> origin
   </component>
 </project>

@@ -67,3 +67,9 @@ test_18:
 
 test_19:
       message: "Not able to find Assign care protocol Tab"
+
+test_20:
+      message: "Not able to Assign care protocol"
+
+test_21:
+      message: "Not able to refer and assign care protocol"

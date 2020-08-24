@@ -22,6 +22,8 @@
   "Tests/care_management_test.py::test_All_Activity_Filter_Select_Letters", 
   "Tests/care_management_test.py::test_All_Activity_Filter_Select_Encounters", 
   "Tests/care_management_test.py::test_Assign_Module", 
+  "Tests/care_management_test.py::test_Assign_Care_Protocol", 
+  "Tests/care_management_test.py::test_Refer_and_Assign_Care_Protocol", 
   "Tests/worklist_test.py::test_Worklist_Todo", 
   "Tests/worklist_test.py::test_Worklist_Scheduled_Task", 
   "Tests/worklist_test.py::test_Worklist_03", 

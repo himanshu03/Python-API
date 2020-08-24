@@ -20,7 +20,17 @@ Orlando:
    test_19:
       uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
       count: 22
+   test_20:
+        uri : "/P4229150/health_modules/115/assign"
+        payload: "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"AutomationMamta\",\r\n        \"lastName\": \"Test\",\r\n        \"id\": \"b7a6f4ab-06d0-48e9-bf82-d753fc1b2081\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 668\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 669\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 670\r\n        }\r\n    ]\r\n}"
+        healthModuleId: 115
+        isActive: True
 
+   test_21:
+      uri: "/P4229150/health_modules/115/refer"
+      payload: "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"InNote\",\r\n        \"lastName\": \"test\",\r\n        \"id\": \"70b52398-91c1-44fa-ae4f-e3475de16743\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"id\": 668,\r\n            \"scheduledTime\": 1597721400000\r\n        },\r\n        {\r\n            \"id\": 669,\r\n            \"scheduledTime\": 1597721400000\r\n        },\r\n        {\r\n            \"id\": 670,\r\n            \"scheduledTime\": 1597721400000\r\n        }\r\n    ],\r\n    \"isReferred\": true\r\n}"
+      healthModuleId: 115
+      isActive: True
 
 
 StLukes:
@@ -45,7 +55,17 @@ StLukes:
    test_19:
       uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
       count: 14
+   test_20:
+      uri: "/P266/health_modules/62/assign"
+      payload:  "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"Mamta\",\r\n        \"lastName\": \"Giri\",\r\n        \"id\": \"74bbb531-ba77-4f24-b57e-c25c4c79f917\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 587\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 588\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 589\r\n        },\r\n        {\r\n            \"scheduledTime\": 1598412600000,\r\n            \"id\": 590\r\n        },\r\n        {\r\n            \"scheduledTime\": 1598412600000,\r\n            \"id\": 591\r\n        },\r\n        {\r\n            \"scheduledTime\": 1599017400000,\r\n            \"id\": 592\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 593\r\n        }\r\n    ]\r\n}"
+      healthModuleId: 62
+      isActive: True
 
+   test_21:
+      uri: "/P266/health_modules/62/assign"
+      payload: "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"Iti\",\r\n        \"lastName\": \"Shrunkhla\",\r\n        \"id\": \"b0f4d743-4257-4793-a43d-b62384551f9a\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"id\": 587,\r\n            \"scheduledTime\": 1597894200000\r\n        },\r\n        {\r\n            \"id\": 588,\r\n            \"scheduledTime\": 1597894200000\r\n        },\r\n        {\r\n            \"id\": 589,\r\n            \"scheduledTime\": 1597894200000\r\n        },\r\n        {\r\n            \"id\": 590,\r\n            \"scheduledTime\": 1599103800000\r\n        },\r\n        {\r\n            \"id\": 591,\r\n            \"scheduledTime\": 1599103800000\r\n        },\r\n        {\r\n            \"id\": 592,\r\n            \"scheduledTime\": 1599708600000\r\n        },\r\n        {\r\n            \"id\": 593,\r\n            \"scheduledTime\": 1597894200000\r\n        }\r\n    ],\r\n    \"isReferred\": true\r\n}"
+      healthModuleId: 62
+      isActive: True
 
 CH:
    test_01: "/health_modules?filters=%7B%22type%22%3A%22activity_bundle%22%2C%22isActive%22%3Atrue%7D"
@@ -69,7 +89,17 @@ CH:
       uri: "/health_modules?filters=%7B%22type%22:%22health_module%22,%22status%22:%22ACTIVE%22%7D"
       count: 8
 
+   test_20:
+      uri: "/P71144140865/health_modules/25/assign"
+      payload: "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"Mamta\",\r\n        \"lastName\": \"Giri\",\r\n        \"id\": \"b7610ef5-894a-48f6-acda-8583d5d80e70\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 121\r\n        },\r\n        {\r\n            \"scheduledTime\": 1597203000000,\r\n            \"id\": 122\r\n        },\r\n        {\r\n            \"scheduledTime\": 1598412600000,\r\n            \"id\": 123\r\n        }\r\n    ]\r\n}"
+      healthModuleId: 25
+      isActive: True
 
+   test_21:
+      uri: "/P71144140865/health_modules/25/assign"
+      payload: "{\r\n    \"healthCoach\": {\r\n        \"firstName\": \"Iti\",\r\n        \"lastName\": \"Shrunkhla\",\r\n        \"id\": \"785b0ca1-d2b5-4c19-ad79-a8a24c83b08b\"\r\n    },\r\n    \"unitList\": [\r\n        {\r\n            \"id\": 121,\r\n            \"scheduledTime\": 1597894200000\r\n        },\r\n        {\r\n            \"id\": 122,\r\n            \"scheduledTime\": 1597894200000\r\n        },\r\n        {\r\n            \"id\": 123,\r\n            \"scheduledTime\": 1599103800000\r\n        }\r\n    ],\r\n    \"isReferred\": true\r\n}"
+      healthModuleId: 25
+      isActive: True
 
 
 
