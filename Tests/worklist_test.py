@@ -188,7 +188,7 @@ def test_Worklist_06(Authorization, Base_Url,set_cookie):
 def test_Worklist_07(Authorization, Base_Url,set_cookie):
 	tc_desc = "To verify the pending task on Pending section under activity received"
 	tc_status = "FAIL"
-	tc_name = "Worklist_TC06"
+	tc_name = "Worklist_TC07"
 	tc_priority = "Medium"
 
 	try:
@@ -318,6 +318,7 @@ def test_Worklist_11(Authorization, Base_Url,set_cookie):
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 def test_Worklist_12(Authorization, Base_Url,set_cookie):
 	tc_desc = "Verify the search should not be reset after changing the date on worklist"
 	tc_status = "FAIL"
@@ -443,3 +444,176 @@ def test_Worklist_16(Authorization, Base_Url,set_cookie):
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_17(Authorization, Base_Url,set_cookie):
+	tc_desc = "To verify that the completed Task should be visible under Completed section"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC17"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_17"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 200
+		assert response.json()['metadata']['count'] >= 0
+
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_17']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_1(Authorization, Base_Url,set_cookie):
+	tc_desc = "To verify that the completed Task should be visible under Completed section"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC18"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_18']['test_care'] + project_data[conftest.cmd_arg]["test_18"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_18"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 201
+		assert response.json()['noteType'] == test_data['test_18']['notetype']
+		assert response.json()['sourceId'] == test_data['test_18']['empi']
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_18']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_19(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify the patient is assigned as high priority on Single click"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC19"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_19"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_19"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 204
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_19']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_20(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify the patient is assigned as medium priority on Double click"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC20"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_20"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_20"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 204
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_20']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_21(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify User is able to remove priority on triple click"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC21"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_21"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_21"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 204
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_21']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_22(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify User is able to Assign priority of multiple patient in One time"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC22"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_22"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_22"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 204
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_22']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+def test_Worklist_23(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify User is able to Remove priority of multiple patient in One time"
+	tc_status = "FAIL"
+	tc_name = "Worklist_TC23"
+	tc_priority = "Medium"
+
+	try:
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_23"]["uri"]
+		payload = project_data[conftest.cmd_arg]["test_23"]["payload"]
+		headers = {
+			'Authorization': Authorization,
+			'Content-Type': 'application/json',
+			'Cookie': set_cookie
+		}
+		response = requests.request("POST", url, headers=headers, data=payload)
+		assert response.status_code == 204
+		tc_status = "PASS"
+	except Exception as e:
+		tc_status = "FAIL"
+		print(test_data['test_23']['message'])
+		raise
+	finally:
+		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+

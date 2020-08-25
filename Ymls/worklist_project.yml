@@ -41,6 +41,30 @@ Orlando:
    test_16:
       uri: "/users/cfafb957-779e-468a-bd17-4044d113c5c1/referrals/5f3fa4537f9b71741965c132/_decline"
       payload: ""
+   test_17:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1598207400000,\"to\":1598293799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
+   test_18:
+      uri: ""
+      payload: "{\"type\":\"NOTE\",\"text\":\"Test Note\"}"
+   test_19:
+      uri: "/todos/priority/_bulk"
+      payload: "{\"todoIdList\":[\"5dde0d9a7f9b716a409f0dfc\",\"5dde413d7f9b71694af996ea\",\"5de756657f9b71694b2aaa72\",\"5de77d927f9b712bb1fc085f\",\"5de77bbd7f9b71694b2aaa84\",\"5de775207f9b7173860190f0\",\"5de781c77f9b715254f413e5\",\"5de76b757f9b71697f284383\",\"5de76ab27f9b71651a435de4\",\"5de76d3b7f9b71694b2aaa80\",\"5de5fd6c7f9b71606f9969d6\",\"5de4c0b67f9b713529e7f51e\",\"5de4bf217f9b7114e7f04f48\",\"5de4bc497f9b713529e7f4da\",\"5f45105d7f9b717420de0d6e\",\"5f3fb0e97f9b71741d194352\",\"5f3fa80b7f9b717417ba2e48\",\"5f45105b7f9b717423c22583\",\"5f3fa93d7f9b71742ecd1eed\",\"5f3fa79e7f9b717432629262\"],\"priority\":2,\"all\":false}"
+   test_20:
+      uri: "/todos/priority/_bulk"
+      payload: "{\"todoIdList\":[\"5dde0d9a7f9b716a409f0dfc\",\"5dde413d7f9b71694af996ea\",\"5de756657f9b71694b2aaa72\",\"5de77d927f9b712bb1fc085f\",\"5de77bbd7f9b71694b2aaa84\",\"5de775207f9b7173860190f0\",\"5de781c77f9b715254f413e5\",\"5de76b757f9b71697f284383\",\"5de76ab27f9b71651a435de4\",\"5de76d3b7f9b71694b2aaa80\",\"5de5fd6c7f9b71606f9969d6\",\"5de4c0b67f9b713529e7f51e\",\"5de4bf217f9b7114e7f04f48\",\"5de4bc497f9b713529e7f4da\",\"5f45105d7f9b717420de0d6e\",\"5f3fb0e97f9b71741d194352\",\"5f3fa80b7f9b717417ba2e48\",\"5f45105b7f9b717423c22583\",\"5f3fa93d7f9b71742ecd1eed\",\"5f3fa79e7f9b717432629262\"],\"priority\":1,\"all\":false}"
+   test_21:
+      uri: "/todos/priority/_bulk"
+      payload: "{\"todoIdList\":[\"5dde0d9a7f9b716a409f0dfc\",\"5dde413d7f9b71694af996ea\",\"5de756657f9b71694b2aaa72\",\"5de77d927f9b712bb1fc085f\",\"5de77bbd7f9b71694b2aaa84\",\"5de775207f9b7173860190f0\",\"5de781c77f9b715254f413e5\",\"5de76b757f9b71697f284383\",\"5de76ab27f9b71651a435de4\",\"5de76d3b7f9b71694b2aaa80\",\"5de5fd6c7f9b71606f9969d6\",\"5de4c0b67f9b713529e7f51e\",\"5de4bf217f9b7114e7f04f48\",\"5de4bc497f9b713529e7f4da\",\"5f45105d7f9b717420de0d6e\",\"5f3fb0e97f9b71741d194352\",\"5f3fa80b7f9b717417ba2e48\",\"5f45105b7f9b717423c22583\",\"5f3fa93d7f9b71742ecd1eed\",\"5f3fa79e7f9b717432629262\"],\"priority\":0,\"all\":false}"
+   test_22:
+      uri: "/todos/priority/_bulk"
+      payload: "{\"todoIdList\":[\"5dde0d9a7f9b716a409f0dfc\",\"5dde413d7f9b71694af996ea\",\"5de756657f9b71694b2aaa72\",\"5de77d927f9b712bb1fc085f\",\"5de77bbd7f9b71694b2aaa84\",\"5de775207f9b7173860190f0\",\"5de781c77f9b715254f413e5\",\"5de76b757f9b71697f284383\",\"5de76ab27f9b71651a435de4\",\"5de76d3b7f9b71694b2aaa80\",\"5de5fd6c7f9b71606f9969d6\",\"5de4c0b67f9b713529e7f51e\",\"5de4bf217f9b7114e7f04f48\",\"5de4bc497f9b713529e7f4da\",\"5f45105d7f9b717420de0d6e\",\"5f3fb0e97f9b71741d194352\",\"5f3fa80b7f9b717417ba2e48\",\"5f45105b7f9b717423c22583\",\"5f3fa93d7f9b71742ecd1eed\",\"5f3fa79e7f9b717432629262\"],\"priority\":2,\"all\":false}"
+   test_23:
+      uri: "/todos/priority/_bulk"
+      payload: "{\"todoIdList\":[\"5dde0d9a7f9b716a409f0dfc\",\"5dde413d7f9b71694af996ea\",\"5de756657f9b71694b2aaa72\",\"5de77d927f9b712bb1fc085f\",\"5de77bbd7f9b71694b2aaa84\",\"5de775207f9b7173860190f0\",\"5de781c77f9b715254f413e5\",\"5de76b757f9b71697f284383\",\"5de76ab27f9b71651a435de4\",\"5de76d3b7f9b71694b2aaa80\",\"5de5fd6c7f9b71606f9969d6\",\"5de4c0b67f9b713529e7f51e\",\"5de4bf217f9b7114e7f04f48\",\"5de4bc497f9b713529e7f4da\",\"5f45105d7f9b717420de0d6e\",\"5f3fb0e97f9b71741d194352\",\"5f3fa80b7f9b717417ba2e48\",\"5f45105b7f9b717423c22583\",\"5f3fa93d7f9b71742ecd1eed\",\"5f3fa79e7f9b717432629262\"],\"priority\":0,\"all\":false}"
+   test_24:
+      uri: "/users/cfafb957-779e-468a-bd17-4044d113c5c1/referrals/received"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
 
 
 StLukes:

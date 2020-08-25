@@ -45,6 +45,26 @@ test_15:
      message: "User is not able to accept the received referral of other User"
 test_16:
      message: "User is not able to decline the received referral of other User"
+test_17:
+     message: "User is not able to view the completed activity"
+test_18:
+     message: "User is not able to add note for a patient"
+     test_care: "incare/patients/P12910841/notes"
+     empi: "P12910841"
+     notetype: "NOTE"
+test_19:
+     message: "User is not able to change the priority from low to high"
+test_20:
+     message: "User is not able to change the priority from high to medium"
+test_21:
+     message: "User is not able to change the priority from medium to None"
+test_22:
+     message: "User is not able to change the priority of multiple patients"
+test_23:
+     message: "User is not able to remove the priority of multiple patients"
+test_24:
+     message: "User is not able to view the pending task under activity received"
+     empi: "P4229150"
 
 
 
