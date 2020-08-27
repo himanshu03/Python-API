@@ -63,8 +63,13 @@ test_22:
 test_23:
      message: "User is not able to remove the priority of multiple patients"
 test_24:
-     message: "User is not able to view the pending task under activity received"
-     empi: "P4229150"
+     message: "User is not able to verify the care protocol filter"
+test_25:
+     message: "User is not able to verify the sorting on Insurance"
+test_26:
+     message: "User is not able to verify the sorting on Risk"
+
+
 
 
 

@@ -13,43 +13,16 @@ with open("/Users/it000621/PycharmProjects/incareapisautomation/Ymls/worklist_pr
 	project_data = yaml.load(project)
 
 
-
-@pytest.mark.skip
-def test_Worklist_24(Authorization, Base_Url,set_cookie):
-	tc_desc = "To verify that the completed Task should be visible under Completed section"
+def test_Worklist_25(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify the sorting on Insurance"
 	tc_status = "FAIL"
-	tc_name = "Worklist_TC24"
+	tc_name = "Worklist_TC25"
 	tc_priority = "Medium"
 
 	try:
-		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_24"]["uri"]
-		payload = project_data[conftest.cmd_arg]["test_24"]["payload"]
-		headers = {
-			'Authorization': Authorization,
-			'Content-Type': 'application/json',
-			'Cookie': set_cookie
-		}
-		response = requests.request("POST", url, headers=headers, data=payload)
-		assert response.status_code == 200
-		assert response.json()['data'][0]['empi'] == test_data['test_24']['empi']
-		tc_status = "PASS"
-	except Exception as e:
-		tc_status = "FAIL"
-		print(test_data['test_24']['message'])
-		raise
-	finally:
-		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
-
-def test_Worklist_07(Authorization, Base_Url,set_cookie):
-	tc_desc = "To verify the pending task on Pending section under activity received"
-	tc_status = "FAIL"
-	tc_name = "Worklist_TC07"
-	tc_priority = "Medium"
-
-	try:
-		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_07"]["uri"]
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_25"]["uri"]
 		print(url)
-		payload = project_data[conftest.cmd_arg]["test_07"]["payload"]
+		payload = project_data[conftest.cmd_arg]["test_25"]["payload"]
 		headers = {
 			'Authorization': Authorization,
 			'Content-Type': 'application/json',
@@ -61,7 +34,7 @@ def test_Worklist_07(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(test_data['test_07']['message'])
+		print(test_data['test_25']['message'])
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
