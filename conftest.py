@@ -59,17 +59,17 @@ def Authorization(request, scope='session'):
 
 
 
-    # Redshift details
-    # user = conf[cmd_arg]["redshift"]["user"]
-    # password = conf[cmd_arg]["redshift"]["pwd"]
-    # db = conf[cmd_arg]["redshift"]["db"]
-    # host = conf[cmd_arg]["redshift"]["host"]
-    # port = conf[cmd_arg]["redshift"]["port"]
-    # engine = sqlalchemy.create_engine(
-    #     'postgres://' + user + ':' + password + '@' + host + ':' + port + '/'
-    #     + db)
-    # rs_session = engine.connect()
-    # print("RS Connection successful")
+    Redshift details
+    user = conf[cmd_arg]["redshift"]["user"]
+    password = conf[cmd_arg]["redshift"]["pwd"]
+    db = conf[cmd_arg]["redshift"]["db"]
+    host = conf[cmd_arg]["redshift"]["host"]
+    port = conf[cmd_arg]["redshift"]["port"]
+    engine = sqlalchemy.create_engine(
+        'postgres://' + user + ':' + password + '@' + host + ':' + port + '/'
+        + db)
+    rs_session = engine.connect()
+    print("RS Connection successful")
 
     return Authorization
 
