@@ -67,7 +67,13 @@ test_24:
 test_25:
      message: "User is not able to verify the sorting on Insurance"
 test_26:
-     message: "User is not able to verify the sorting on Risk"
+     message: "User is not able to verify the sorting on HHSHCC Risk"
+test_27:
+     message: "User is not able to verify the sorting on CDPS Risk"
+test_28:
+     message: "User is not able to verify the sorting on CMSHCC Risk"
+test_29:
+     message: "User is not able to verify the sorting on SVI Risk"
 
 
 

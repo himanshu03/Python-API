@@ -13,16 +13,16 @@ with open("/Users/it000621/PycharmProjects/incareapisautomation/Ymls/worklist_pr
 	project_data = yaml.load(project)
 
 
-def test_Worklist_25(Authorization, Base_Url,set_cookie):
-	tc_desc = "Verify the sorting on Insurance"
+def test_Worklist_29(Authorization, Base_Url,set_cookie):
+	tc_desc = "Verify the HHSHCC risk sorting"
 	tc_status = "FAIL"
-	tc_name = "Worklist_TC25"
+	tc_name = "Worklist_TC29"
 	tc_priority = "Medium"
 
 	try:
-		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_25"]["uri"]
+		url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_29"]["uri"]
 		print(url)
-		payload = project_data[conftest.cmd_arg]["test_25"]["payload"]
+		payload = project_data[conftest.cmd_arg]["test_29"]["payload"]
 		headers = {
 			'Authorization': Authorization,
 			'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ def test_Worklist_25(Authorization, Base_Url,set_cookie):
 		tc_status = "PASS"
 	except Exception as e:
 		tc_status = "FAIL"
-		print(test_data['test_25']['message'])
+		print(test_data['test_29']['message'])
 		raise
 	finally:
 		conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)

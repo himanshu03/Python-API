@@ -31,7 +31,7 @@ Orlando:
       payload: "{\"searchTerm\":\"COVID\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"from\":1597602600000,\"to\":1597688999999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
    test_13:
       uri: "/referrals/5de4b4ac7f9b716a409f0e1c/message"
-      payload: "{\"message\":\"Please accept this task on Tuesday111\"}"
+      payload: "{\"message\":\"Please accept this task\"}"
    test_14:
       uri: "/users/5dcc8bf8-1ccb-439a-bf48-9ff8e7e4bf3b/referrals/_bulk"
       payload: "{\"assignedTo\":\"cfafb957-779e-468a-bd17-4044d113c5c1\",\"todoIdList\":[\"5ed6247b7f9b71255e921b78\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
@@ -70,7 +70,16 @@ Orlando:
       payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
    test_26:
       uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
+   test_27:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"cdps_risk\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
+   test_28:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"cmshcc_risk\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
+   test_29:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"svi\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
 
 
 StLukes:
