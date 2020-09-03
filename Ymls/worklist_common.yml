@@ -49,9 +49,6 @@ test_17:
      message: "User is not able to view the completed activity"
 test_18:
      message: "User is not able to add note for a patient"
-     test_care: "incare/patients/P12910841/notes"
-     empi: "P12910841"
-     notetype: "NOTE"
 test_19:
      message: "User is not able to change the priority from low to high"
 test_20:
@@ -74,8 +71,6 @@ test_28:
      message: "User is not able to verify the sorting on CMSHCC Risk"
 test_29:
      message: "User is not able to verify the sorting on SVI Risk"
-
-
 
 
 
