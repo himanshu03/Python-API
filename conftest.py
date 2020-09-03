@@ -59,7 +59,7 @@ def Authorization(request, scope='session'):
 
 
 
-    Redshift details
+    # Redshift details
     user = conf[cmd_arg]["redshift"]["user"]
     password = conf[cmd_arg]["redshift"]["pwd"]
     db = conf[cmd_arg]["redshift"]["db"]
