@@ -96,10 +96,10 @@ def test_Search_Assessment(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_04(Authorization, Base_Url, set_cookie):
+def test_Assessment_04(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the In Progress Tab"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC04"
+    tc_name = "Assessment_TC04"
     tc_priority = "High"
 
     try:
@@ -136,10 +136,10 @@ def test_Worklist_04(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_05(Authorization, Base_Url, set_cookie):
+def test_Assessment_05(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the Complete Tab under Assessment"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC05"
+    tc_name = "Assessment_TC05"
     tc_priority = "High"
 
     try:
@@ -175,10 +175,10 @@ def test_Worklist_05(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_06(Authorization, Base_Url, set_cookie):
+def test_Assessment_06(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to discard Assessment"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC06"
+    tc_name = "Assessment_TC06"
     tc_priority = "High"
 
     try:
@@ -225,10 +225,10 @@ def test_Worklist_06(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_07(Authorization, Base_Url, set_cookie):
+def test_Assessment_07(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify Discard functionality of new Assessment"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC07"
+    tc_name = "Assessment_TC07"
     tc_priority = "High"
 
     try:
@@ -266,10 +266,10 @@ def test_Worklist_07(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_08(Authorization, Base_Url, set_cookie):
+def test_Assessment_08(Authorization, Base_Url, set_cookie):
     tc_desc = "Submit assessment without any response"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC08"
+    tc_name = "Assessment_TC08"
     tc_priority = "High"
 
     try:
@@ -317,10 +317,10 @@ def test_Worklist_08(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_09(Authorization, Base_Url, set_cookie):
+def test_Assessment_09(Authorization, Base_Url, set_cookie):
     tc_desc = "Submit assessment with invalid text"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC09"
+    tc_name = "Assessment_TC09"
     tc_priority = "High"
 
     try:
@@ -369,10 +369,10 @@ def test_Worklist_09(Authorization, Base_Url, set_cookie):
 
 
 @pytest.mark.sanity
-def test_Worklist_10(Authorization, Base_Url, set_cookie):
+def test_Assessment_10(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify after reassessing, all the previously selected option should get deleted"
     tc_status = "FAIL"
-    tc_name = "Worklist_TC10"
+    tc_name = "Assessment_TC10"
     tc_priority = "High"
 
     try:
