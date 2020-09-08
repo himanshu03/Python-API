@@ -77,7 +77,7 @@ def test_Worklist_Scheduled_Task(Authorization, Base_Url,set_cookie):
 def test_Worklist_03(Authorization, Base_Url,set_cookie):
 	tc_desc = "Submit assessment without any response"
 	tc_status = "FAIL"
-	tc_name = "Assessment_TC03"
+	tc_name = "Worklist_TC03"
 	tc_priority = "High"
 	print(tc_desc + " is Executing")
 	try:
