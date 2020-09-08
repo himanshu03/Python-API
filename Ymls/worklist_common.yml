@@ -11,11 +11,6 @@ test_03:
 test_04:
      count: "0"
 test_05:
-     data: "P2913414"
-     name: "TCM Care Protocol"
-     length: "1866"
-     count: "1"
-     type: "CARE_PROTOCOL_REASSIGNMENT"
      message: "Patient with selected care protocol is not visible"
 test_06:
      message: "User is not able to click on the re-assign functionality of the task"
@@ -23,18 +18,13 @@ test_07:
      message: "User is not able to view pending task"
 test_08:
      message: "User is not able to view pending task under activity sent tab"
-     care_protocol: "Facility Transfer Care Protocol"
-     type: "HEALTH_MODULE"
 test_09:
      message: "User is not able to view all task under all section of activity received"
-     care_protocol: "CHF  v2"
-     type: "HEALTH_MODULE"
 test_10:
      message: "User is not able to sort the data"
-     type: "HEALTH_MODULE"
 test_11:
      message: "User is not able to sort the pcp data"
-     type: "HEALTH_MODULE"
+
 test_12:
      message: "Search has been reset after changing the date"
 test_13:
