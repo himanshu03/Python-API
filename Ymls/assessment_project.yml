@@ -14,6 +14,26 @@ StLukes:
    test_03:
       uri: "/P266/assessments/_search"
       payload: "{\r\n    \"searchTerm\": \"tes\",\r\n    \"status\": \"COMPLETED\"\r\n}"
+   test_04:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+   test_05:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\"}"
+   test_06:
+      uri: "/P1040619/assessments/_search"
+      uri1: "/P1040619/assessments/"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+   test_07:
+      uri: "/P1040619/assessments"
+      uri1: "/P1040619/assessments/"
+      payload: "{\"assessmentId\":\"5bd6b7dfb84f138639b925b9\"}"
+   test_08:
+      uri: "/P1040619/assessments"
+      uri1: "/P1040619/assessments/"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+      payload1: "{\"responseList\":[{\"questionId\":\"5bd6b7dfb84f138639b925ba\",\"answer\":3,\"comment\":null},
+      {\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":3,\"comment\":null}]}"
 
 
 CH:

@@ -11,5 +11,19 @@ test_03:
      count: "0"
      message: "User is able to search assessment with Invalid text"
 
+test_04:
+     message: "User is not able to view the in-progress assessment"
+
+test_05:
+     message: "User is not able to view the completed assessment"
+
+test_06:
+     message: "Verify User is not able to Clear response functionality of Assessment"
+
+test_07:
+     message: "USer is not able to Discard functionality of new Assessment"
+
+test_08:
+     message: "User is not able to Submit assessment without any response"
 
 
