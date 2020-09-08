@@ -370,7 +370,7 @@ def test_Worklist_09(Authorization, Base_Url, set_cookie):
 
 @pytest.mark.sanity
 def test_Worklist_10(Authorization, Base_Url, set_cookie):
-    tc_desc = "Submit assessment with invalid text"
+    tc_desc = "Verify after reassessing, all the previously selected option should get deleted"
     tc_status = "FAIL"
     tc_name = "Worklist_TC10"
     tc_priority = "High"
