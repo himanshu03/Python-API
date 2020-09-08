@@ -24,6 +24,10 @@ test_07:
      message: "USer is not able to Discard functionality of new Assessment"
 
 test_08:
-     message: "User is not able to Submit assessment without any response"
+     message: "User is not able to Submit assessment without any text response"
+test_09:
+     message: "User is able to submit the response with invalid text"
+test_10:
+     message: "User is not able to re-assess the assessment"
 
 
