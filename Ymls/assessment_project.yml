@@ -94,7 +94,7 @@ StLukes:
                                               {\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":3,\"comment\":null},
                                               {\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":3,\"comment\":null}]}"
       payload2: "{\"responseList\":[{\"questionId\":\"5bd6b7dfb84f138639b925ba\",\"answer\":2,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":2,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":1,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":1,\"comment\":null}]}"
-
+      payload3: "{\"assessmentId\":\"5bd6b7dfb84f138639b925b0\"}"
 
 
 CH:

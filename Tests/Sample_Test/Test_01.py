@@ -31,6 +31,7 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response = requests.request("POST", url, headers=headers, data=payload)
+        print("Response1",response.json())
         print("Response 1",response.status_code)
 
         json_data = response.json()
@@ -68,37 +69,55 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
         print("Total Score of a patient assessment is:", result['completed'][0]['summaryTypeList'][0]['totalScore'])
         print("Rating Display String of a patient assessment is:", result['completed'][0]['summaryTypeList'][0][
             'ratingDisplayString'])
-
-        url_3 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] + assignment_id \
-                + "/_submit"
-        print(url_1)
-        payload_3 = project_data[conftest.cmd_arg]["test_17"]["payload2"]
+        #################################################################################################################
+        url_3 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri"]
+        print(url_3)
+        payload_3 = project_data[conftest.cmd_arg]["test_17"]["payload"]
         headers = {
             'Authorization': Authorization,
             'Content-Type': 'application/json',
             'Cookie': set_cookie
         }
         response_3 = requests.request("POST", url_3, headers=headers, data=payload_3)
-        print("Response 3", response_3.status_code)
+        print("Response4", response_3.json())
+        print("Response 4", response_3.status_code)
 
-        url_4 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] + assessment_id \
-                + "/_fetch"
+        json_data_1 = response_3.json()
+        assignment_id_1 = json_data_1['assignmentId']
+        assessment_id_1 = json_data_1['assessmentId']
+
+        url_4 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] + \
+                assignment_id_1 \
+                + "/_submit"
         print(url_4)
-        payload_4 = {}
+        payload_4 = project_data[conftest.cmd_arg]["test_17"]["payload2"]
         headers = {
             'Authorization': Authorization,
             'Content-Type': 'application/json',
             'Cookie': set_cookie
         }
-        response_4 = requests.request("GET", url_4, headers=headers, data=payload_4)
+        response_4 = requests.request("POST", url_4, headers=headers, data=payload_4)
         print("Response 4", response_4.status_code)
 
-        result1 = response_4.json()
-        print("Score of a patient 2 assessment is:", result1['completed'][0]['summaryTypeList'][0]['score'])
-        print("ScoreDeviation of a patient 2 assessment is:", result1['completed'][0]['summaryTypeList'][0][
+        url_5 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] + \
+                assessment_id_1 \
+                + "/_fetch"
+        print(url_5)
+        payload_5 = {}
+        headers = {
+            'Authorization': Authorization,
+            'Content-Type': 'application/json',
+            'Cookie': set_cookie
+        }
+        response_5 = requests.request("GET", url_5, headers=headers, data=payload_5)
+        print("Response 5", response_5.status_code)
+
+        result1 = response_5.json()
+        print("Score of a patient assessment is:", result1['completed'][0]['summaryTypeList'][0]['score'])
+        print("ScoreDeviation of a patient assessment is:", result1['completed'][0]['summaryTypeList'][0][
             'scoreDeviation'])
-        print("Total Score of a patient 2 assessment is:", result1['completed'][0]['summaryTypeList'][0]['totalScore'])
-        print("Rating Display String of a patient 2 assessment is:", result1['completed'][0]['summaryTypeList'][0][
+        print("Total Score of a patient assessment is:", result1['completed'][0]['summaryTypeList'][0]['totalScore'])
+        print("Rating Display String of a patient assessment is:", result1['completed'][0]['summaryTypeList'][0][
             'ratingDisplayString'])
 
         assert response.status_code == 200
@@ -106,6 +125,7 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
         assert response_2.status_code == 200
         assert response_3.status_code == 200
         assert response_4.status_code == 200
+        assert response_5.status_code == 200
 
         tc_status = "PASS"
     except Exception as e:
