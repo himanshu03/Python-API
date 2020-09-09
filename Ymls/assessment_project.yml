@@ -52,6 +52,39 @@ StLukes:
                        {\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":3,\"comment\":null},
                        {\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":3,\"comment\":null}]}"
 
+   test_11:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+      uri1: "/P1040619/assessments/"
+      payload1: "{\"responseList\":[{\"questionId\":\"5bd6b7dfb84f138639b925ba\",\"answer\":3,\"comment\":null},
+                       {\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":3,\"comment\":null}]}"
+
+   test_12:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+      payload1: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\"}"
+
+   test_13:
+      uri: "/P1040619/assessments"
+      payload: "{\"assessmentId\":\"5bd6b7dfb84f138639b925b9\"}"
+
+   test_14:
+      uri: "/P1040619/assessments"
+      payload: "{\"assessmentId\":\"5bd6b7dfb84f138639b925b9\"}"
+      uri1: "/P1040619/assessments/"
+      payload1: "{\"responseList\":[{\"questionId\":\"5bd6b7dfb84f138639b925ba\",\"answer\":3,\"comment\":null},
+                                        {\"questionId\":\"5bd6b7dfb84f138639b925bb\",\"answer\":3,\"comment\":null},
+                                        {\"questionId\":\"5bd6b7dfb84f138639b925bc\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bd\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925be\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925bf\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c0\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c1\",\"answer\":4,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c2\",\"answer\":3,\"comment\":null},{\"questionId\":\"5bd6b7dfb84f138639b925c3\",\"answer\":3,\"comment\":null}]}"
+
+   test_15:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"ONGOING\"}"
+      uri1: "/P1040619/assessments/"
+
+   test_16:
+      uri: "/P1040619/assessments/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\"}"
+      uri1: "/P1040619/assessments/"
 
 CH:
    test_01: "/P71144140865/assessments/5ead596b10a3b32358e1a987/_export"

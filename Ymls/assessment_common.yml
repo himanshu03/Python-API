@@ -29,5 +29,17 @@ test_09:
      message: "User is able to submit the response with invalid text"
 test_10:
      message: "User is not able to re-assess the assessment"
-
+test_11:
+     message: "User is not able to View and edit the saved assessment"
+test_12:
+     message: "User is not able to view the completed and In-progress section available under Assessment for
+     a patient"
+test_13:
+     message: "User is not able to create new assessment."
+test_14:
+     message: "User is not able to submit the new assessment"
+test_15:
+     message: "User is not able to discard the assessment"
+test_16:
+     message: "User is not able to switch the assessment"
 

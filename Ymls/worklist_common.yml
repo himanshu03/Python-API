@@ -1,4 +1,4 @@
-test_care: "/incare/worklist"
+test_care: "incare/worklist"
 
 test_01:
      message: "User is not able to see his daily progress on User's Workqueue under Todos"
