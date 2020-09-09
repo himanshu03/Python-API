@@ -42,4 +42,5 @@ test_15:
      message: "User is not able to discard the assessment"
 test_16:
      message: "User is not able to switch the assessment"
-
+test_17:
+     message: "User is not able to submit two different assessment"
