@@ -245,6 +245,32 @@ StLukes:
       payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
       payload1: ""
 
+Sanitas:
+   test_01:
+      uri: "/todos/_count"
+      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+   test_02:
+      uri: "/todos/_search"
+      empi: "P287"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+   test_05:
+      uri: "/referrals/received"
+      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+   test_06:
+      uri: "/referrals/_bulk"
+      payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+   test_07:
+      uri: "/referrals/received"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_08:
+      uri: "/referrals/received"
+      payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_09:
+      uri: "/referrals/sent"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+   test_10:
+      uri: "/todos/_search"
+      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
 
 
 
