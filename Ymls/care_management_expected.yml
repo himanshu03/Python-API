@@ -1,250 +1,250 @@
 Orlando:
-    "care_protocols": [
-        {
-            "name": "Facility Transfer Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "ED Visit Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "Network Adequacy Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "High Cost - High Utilization Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "TCM Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "SNF Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "Tuck-In Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "Universal Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "Guided Transitions Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "ER Admit Test Protocol (Care Protocol for Product) Asthma Outreach",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "Prospective Risk Protocol",
-            "category": "Risk Team",
-            "type": "health_module"
-        },
-        {
-            "name": "COVID-19 Care Protocol",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Prospective Risk Protocol V2",
-            "category": "Risk Team",
-            "type": "health_module"
-        },
-        {
-            "name": "CHF  v2",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Prospective Risk Protocol V3",
-            "category": "Risk Team",
-            "type": "health_module"
-        },
-        {
-            "name": "Prospective Risk Protocol V3",
-            "category": "Risk Team",
-            "type": "health_module"
-        },
+  "care_protocols": [
+    {
+      "name": "Facility Transfer Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "ED Visit Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Network Adequacy Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "High Cost - High Utilization Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "TCM Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "SNF Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Tuck-In Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Universal Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Guided Transitions Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "ER Admit Test Protocol (Care Protocol for Product) Asthma Outreach",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Prospective Risk Protocol",
+      "category": "Risk Team",
+      "type": "health_module"
+    },
+    {
+      "name": "COVID-19 Care Protocol",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Prospective Risk Protocol V2",
+      "category": "Risk Team",
+      "type": "health_module"
+    },
+    {
+      "name": "CHF  v2",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Prospective Risk Protocol V3",
+      "category": "Risk Team",
+      "type": "health_module"
+    },
+    {
+      "name": "Prospective Risk Protocol V3",
+      "category": "Risk Team",
+      "type": "health_module"
+    },
 
-        {
-            "name": "Cardiovascular Disease Protocol",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management Protocol",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: CHF",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: COPD",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: Hypertension",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: Diabetes",
-            "category": "Disease Management",
-            "type": "health_module"
-        }
-        ]
+    {
+      "name": "Cardiovascular Disease Protocol",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management Protocol",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: CHF",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: COPD",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: Hypertension",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: Diabetes",
+      "category": "Disease Management",
+      "type": "health_module"
+    }
+  ]
 
 
 StLukes:
-    "care_protocols": [
-        {
-            "name": "STJ Complex care Protocol",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Gaps In Care Protocol",
-            "category": "Gaps In Care",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: CHF",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "Chronic Disease Management: Diabetes",
-            "category": "Disease Management",
-            "type": "health_module"
-        },
-        {
-            "name": "DSRIP Home Visit Program",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-          "name": "DSRIP Assist",
-          "category": "Transition",
-          "type": "health_module"
-        },
+  "care_protocols": [
+    {
+      "name": "STJ Complex care Protocol",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Gaps In Care Protocol",
+      "category": "Gaps In Care",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: CHF",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "Chronic Disease Management: Diabetes",
+      "category": "Disease Management",
+      "type": "health_module"
+    },
+    {
+      "name": "DSRIP Home Visit Program",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "DSRIP Assist",
+      "category": "Transition",
+      "type": "health_module"
+    },
 
 
-        {
-            "name": "BPCIA Care Coordination",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "IP & EDHU Readmission Prevention Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "ED Visit Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "TCM Care Protocol",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-          "name": "BPCIA Care Coordination - STJ",
-          "category": "Transition",
-          "type": "health_module"
-        },
+    {
+      "name": "BPCIA Care Coordination",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "IP & EDHU Readmission Prevention Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "ED Visit Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "TCM Care Protocol",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "BPCIA Care Coordination - STJ",
+      "category": "Transition",
+      "type": "health_module"
+    },
 
-        {
-            "name": "DSRIP 30 Days Assist",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-            "name": "DSRIP 90 Days Assist",
-            "category": "Transition",
-            "type": "health_module"
-        },
-        {
-          "name": "DSRIP Assist",
-          "category": "Transition",
-          "type": "health_module"
-        },
-        {
-          "name": "Complex Care Protocol - BSL",
-          "category": "Transition",
-          "type": "health_module"
-        }
-        ]
+    {
+      "name": "DSRIP 30 Days Assist",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "DSRIP 90 Days Assist",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "DSRIP Assist",
+      "category": "Transition",
+      "type": "health_module"
+    },
+    {
+      "name": "Complex Care Protocol - BSL",
+      "category": "Transition",
+      "type": "health_module"
+    }
+  ]
 
 CH:
-    "care_protocols": [
+  "care_protocols": [
     {
-        "name": "Chronic Disease Management Protocol",
-        "category": "Disease Management",
-        "type": "health_module"
+      "name": "Chronic Disease Management Protocol",
+      "category": "Disease Management",
+      "type": "health_module"
     },
     {
-        "name": "Rehab/SNF Discharge",
-        "category": "Transition",
-        "type": "health_module"
+      "name": "Rehab/SNF Discharge",
+      "category": "Transition",
+      "type": "health_module"
     },
     {
-        "name": "TCM Discharge",
-        "category": "Transition",
-        "type": "health_module"
+      "name": "TCM Discharge",
+      "category": "Transition",
+      "type": "health_module"
     },
     {
-        "name": "TCM Admission",
-        "category": "Transition",
-        "type": "health_module"
+      "name": "TCM Admission",
+      "category": "Transition",
+      "type": "health_module"
     },
     {
-        "name": "Tuck-In",
-        "category": "Transition",
-        "type": "health_module"
+      "name": "Tuck-In",
+      "category": "Transition",
+      "type": "health_module"
     },
     {
-        "name": "Expired Patient Check-list",
-        "category": "Check List",
-        "type": "health_module"
+      "name": "Expired Patient Check-list",
+      "category": "Check List",
+      "type": "health_module"
     },
     {
-        "name": "Hospice Patient Check-list",
-        "category": "Check List",
-        "type": "health_module"
+      "name": "Hospice Patient Check-list",
+      "category": "Check List",
+      "type": "health_module"
     },
 
     {
-        "name": "ED Visit Follow-up",
-        "category": "Transition",
-        "type": "health_module"
+      "name": "ED Visit Follow-up",
+      "category": "Transition",
+      "type": "health_module"
     },
     {
       "name": "Complex care Protocol - BSL",
       "category": "Disease Management",
       "type": "health_module"
     }
-    ]
+  ]
 
 
 

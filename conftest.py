@@ -1,5 +1,4 @@
 import json
-import logging
 import math
 import os
 import random
@@ -9,7 +8,6 @@ from datetime import datetime
 import pandas as pd
 import pytest
 import requests
-import sqlalchemy
 
 rs_session = 'global'
 conf = 'global'
@@ -21,6 +19,7 @@ option = None
 start_time = 'global'
 set_cookie = 'global'
 payload = 'global'
+
 
 @pytest.fixture
 def Authorization(request, scope='session'):
@@ -43,7 +42,8 @@ def Authorization(request, scope='session'):
     url = conf[cmd_arg]["authurl"]
     module_name = conf[cmd_arg]["module_name"]
     try:
-        data_payload = encrypt_json({"email":conf[cmd_arg][request.param]["user_name"],"password": conf[cmd_arg][request.param]["pwd"]})
+        data_payload = encrypt_json(
+            {"email": conf[cmd_arg][request.param]["user_name"], "password": conf[cmd_arg][request.param]["pwd"]})
         payload = json.dumps(data_payload)
     except:
         data_payload = encrypt_json({"email": conf[cmd_arg]["user_name"], "password": conf[cmd_arg]["pwd"]})
@@ -57,8 +57,6 @@ def Authorization(request, scope='session'):
     token = response.json()["token"]
     Authorization = "a " + token
 
-
-
     # Redshift details
     # user = conf[cmd_arg]["redshift"]["user"]
     # password = conf[cmd_arg]["redshift"]["pwd"]
@@ -66,7 +64,7 @@ def Authorization(request, scope='session'):
     # host = conf[cmd_arg]["redshift"]["host"]
     # port = conf[cmd_arg]["redshift"]["port"]
     # engine = sqlalchemy.create_engine(
-    #     'postgres://' + user + ':' + password + '@' + host + ':' + port + '/'
+    # 'postgres://' + user + ':' + password + '@' + host + ':' + port + '/'
     #     + db)
     # rs_session = engine.connect()
     # print("RS Connection successful")
@@ -78,6 +76,7 @@ def Authorization(request, scope='session'):
 def Base_Url():
     Base_Url = conf[cmd_arg]["baseurl"]
     return Base_Url
+
 
 @pytest.fixture
 def set_cookie(request, scope='session'):
@@ -100,7 +99,8 @@ def set_cookie(request, scope='session'):
     url = conf[cmd_arg]["authurl"]
     module_name = conf[cmd_arg]["module_name"]
     try:
-        data_payload = encrypt_json({"email":conf[cmd_arg][request.param]["user_name"],"password": conf[cmd_arg][request.param]["pwd"]})
+        data_payload = encrypt_json(
+            {"email": conf[cmd_arg][request.param]["user_name"], "password": conf[cmd_arg][request.param]["pwd"]})
         payload = json.dumps(data_payload)
     except:
         data_payload = encrypt_json({"email": conf[cmd_arg]["user_name"], "password": conf[cmd_arg]["pwd"]})
@@ -115,18 +115,21 @@ def set_cookie(request, scope='session'):
     return set_cookie
 
 
-#Script for updating DB
-def updatedb(tc_name,tc_desc, tc_status, tc_priority):
+# Script for updating DB
+def updatedb(tc_name, tc_desc, tc_status, tc_priority):
     _sql = "INSERT INTO iq.test_api_automation_qa (module_name, tc_name,tc_desc,tc_status,time_of_execution, time_duration, priority) VALUES " \
-           "('{}', '{}','{}', '{}', '{}', '{}', '{}');".format(module_name, tc_name,tc_desc,tc_status,ts, round(time.time() - start_time, 4), tc_priority)
+           "('{}', '{}','{}', '{}', '{}', '{}', '{}');".format(module_name, tc_name, tc_desc, tc_status, ts,
+                                                               round(time.time() - start_time, 4), tc_priority)
     try:
         pd.read_sql_query(_sql, rs_session)
     except:
         print("\n")
 
-#Scripts for passing arguments
+
+# Scripts for passing arguments
 def pytest_addoption(parser):
     parser.addoption("--arg", action="store", default="Complete_Health", help="Option for making some stuff")
+
 
 def pytest_configure(config):
     global option
@@ -150,24 +153,24 @@ def pytest_configure(config):
 #         print("End")
 
 
-#Script for converting credentials to hexadecimal
+# Script for converting credentials to hexadecimal
 def encrypt_value(decrypted_value):
-  random_number = math.floor(random.uniform(0, 1) * 89) + 10
-  x = []
-  for each_char in decrypted_value:
-    char_to_ascii = ord(each_char)
-    salted_ascii = char_to_ascii + int(random_number)
-    ascii_to_hex = hex(salted_ascii)[2:]
-    x.append(ascii_to_hex)
-  x.append(int(random_number))
-  final_value = ':'.join(str(y) for y in x)
-  return final_value
+    random_number = math.floor(random.uniform(0, 1) * 89) + 10
+    x = []
+    for each_char in decrypted_value:
+        char_to_ascii = ord(each_char)
+        salted_ascii = char_to_ascii + int(random_number)
+        ascii_to_hex = hex(salted_ascii)[2:]
+        x.append(ascii_to_hex)
+    x.append(int(random_number))
+    final_value = ':'.join(str(y) for y in x)
+    return final_value
+
 
 def encrypt_json(decrypted_json):
-  final_json = {}
-  for each_key in decrypted_json:
-    final_json.update({
-      encrypt_value(each_key): encrypt_value(decrypted_json[each_key])
-    })
-  return final_json
-
+    final_json = {}
+    for each_key in decrypted_json:
+        final_json.update({
+            encrypt_value(each_key): encrypt_value(decrypted_json[each_key])
+        })
+    return final_json

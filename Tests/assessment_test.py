@@ -1,15 +1,13 @@
-import json
 import pytest
 import requests
 import yaml
-from numpy.random.mtrand import randint
 
 import conftest
 
-with open("Ymls/assessment_common.yml", "r") as common:
+with open("/Users/it000621/PycharmProjects/incareapisautomation/Ymls/assessment_common.yml", "r") as common:
     test_data = yaml.load(common)
 
-with open("Ymls/assessment_project.yml", "r") as project:
+with open("/Users/it000621/PycharmProjects/incareapisautomation/Ymls/assessment_project.yml", "r") as project:
     project_data = yaml.load(project)
 
 
@@ -479,6 +477,7 @@ def test_Assessment_10(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Assessment_11(Authorization, Base_Url, set_cookie):
     tc_desc = "To View and edit the saved assessment"
@@ -509,8 +508,8 @@ def test_Assessment_11(Authorization, Base_Url, set_cookie):
         print("Length of assessment id are", len(ids))
         print("Length of assignment id are", len(ids1))
 
-        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_10"]["uri1"] +ids1[
-            0]+"/response"
+        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_10"]["uri1"] + ids1[
+            0] + "/response"
         print(url_1)
         payload_1 = {}
         headers = {
@@ -542,6 +541,7 @@ def test_Assessment_11(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Assessment_12(Authorization, Base_Url, set_cookie):
@@ -595,10 +595,8 @@ def test_Assessment_12(Authorization, Base_Url, set_cookie):
         print("Length of completed assessment id are: ", len(completed_assessment))
         print("Length of completed assignment id are: ", len(completed_assignment))
 
-
         assert response.status_code == 200
         assert response_1.status_code == 200
-
 
         tc_status = "PASS"
     except Exception as e:
@@ -607,6 +605,7 @@ def test_Assessment_12(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Assessment_13(Authorization, Base_Url, set_cookie):
@@ -636,6 +635,7 @@ def test_Assessment_13(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Assessment_14(Authorization, Base_Url, set_cookie):
     tc_desc = "Submit new assessment of type PHQ-9"
@@ -656,7 +656,7 @@ def test_Assessment_14(Authorization, Base_Url, set_cookie):
         json_data = response.json()
         assignment_id = json_data['assignmentId']
 
-        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_14"]["uri1"] +assignment_id \
+        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_14"]["uri1"] + assignment_id \
                 + "/_submit"
         print(url_1)
         payload_1 = project_data[conftest.cmd_arg]["test_14"]["payload1"]
@@ -677,6 +677,7 @@ def test_Assessment_14(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Assessment_15(Authorization, Base_Url, set_cookie):
@@ -729,7 +730,6 @@ def test_Assessment_15(Authorization, Base_Url, set_cookie):
         }
         response_2 = requests.request("DELETE", url_2, headers=headers, data=payload_2)
 
-
         assert response.status_code == 200
         assert response_1.status_code == 200
         assert response_2.status_code == 200
@@ -741,6 +741,7 @@ def test_Assessment_15(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Assessment_16(Authorization, Base_Url, set_cookie):
@@ -782,10 +783,10 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response_1 = requests.request("GET", url_1, headers=headers, data=payload_1)
-        print("Response 1",response_1.status_code)
+        print("Response 1", response_1.status_code)
 
         url_2 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + \
-                assignment_id[0]+"/response"
+                assignment_id[0] + "/response"
         print(url_2)
         payload_2 = {}
         headers = {
@@ -794,7 +795,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response_2 = requests.request("GET", url_2, headers=headers, data=payload_2)
-        print("Response 2",response_2.status_code)
+        print("Response 2", response_2.status_code)
 
         url_3 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + assessment_id[
             1] + "/_fetch"
@@ -809,7 +810,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
         print("Response 3", response_3.status_code)
 
         url_4 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + \
-                assignment_id[1]+"/response"
+                assignment_id[1] + "/response"
         print(url_4)
         payload_4 = {}
         headers = {
@@ -818,7 +819,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response_4 = requests.request("GET", url_4, headers=headers, data=payload_4)
-        print("Response 4",response_4.status_code)
+        print("Response 4", response_4.status_code)
 
         url_5 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + assessment_id[
             2] + "/_fetch"
@@ -833,7 +834,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
         print("Response 5", response_5.status_code)
 
         url_6 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + \
-                assignment_id[2]+"/response"
+                assignment_id[2] + "/response"
         print(url_6)
         payload_6 = {}
         headers = {
@@ -842,7 +843,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response_6 = requests.request("GET", url_6, headers=headers, data=payload_6)
-        print("Response 6",response_6.status_code)
+        print("Response 6", response_6.status_code)
 
         url_7 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + assessment_id[
             3] + "/_fetch"
@@ -857,7 +858,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
         print("Response 7", response_5.status_code)
 
         url_8 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_16"]["uri1"] + \
-                assignment_id[3]+"/response"
+                assignment_id[3] + "/response"
         print(url_8)
         payload_8 = {}
         headers = {
@@ -866,8 +867,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response_8 = requests.request("GET", url_8, headers=headers, data=payload_8)
-        print("Response 8",response_8.status_code)
-
+        print("Response 8", response_8.status_code)
 
         assert response.status_code == 200
         assert response_1.status_code == 200
@@ -887,6 +887,7 @@ def test_Assessment_16(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Assessment_17(Authorization, Base_Url, set_cookie):
     tc_desc = "Submit new assessment of type PHQ-9"
@@ -904,14 +905,14 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
             'Cookie': set_cookie
         }
         response = requests.request("POST", url, headers=headers, data=payload)
-        print("Response1",response.json())
-        print("Response 1",response.status_code)
+        print("Response1", response.json())
+        print("Response 1", response.status_code)
 
         json_data = response.json()
         assignment_id = json_data['assignmentId']
         assessment_id = json_data['assessmentId']
 
-        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] +assignment_id \
+        url_1 = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_17"]["uri1"] + assignment_id \
                 + "/_submit"
         print(url_1)
         payload_1 = project_data[conftest.cmd_arg]["test_17"]["payload1"]
@@ -936,7 +937,7 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
         print("Response 3", response_2.status_code)
 
         result = response_2.json()
-        print("Score of a patient assessment is:",result['completed'][0]['summaryTypeList'][0]['score'])
+        print("Score of a patient assessment is:", result['completed'][0]['summaryTypeList'][0]['score'])
         print("ScoreDeviation of a patient assessment is:", result['completed'][0]['summaryTypeList'][0][
             'scoreDeviation'])
         print("Total Score of a patient assessment is:", result['completed'][0]['summaryTypeList'][0]['totalScore'])
@@ -1007,4 +1008,3 @@ def test_Assessment_17(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
-

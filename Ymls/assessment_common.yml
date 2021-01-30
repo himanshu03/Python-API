@@ -1,46 +1,46 @@
 test_care: "/incare/assessment/patients"
 
 test_01:
-     message: "Not able to export Assessment"
+  message: "Not able to export Assessment"
 
 test_02:
-     message: "Not able to verify the completed date of the available Completed Assessment"
+  message: "Not able to verify the completed date of the available Completed Assessment"
 
 
 test_03:
-     count: "0"
-     message: "User is able to search assessment with Invalid text"
+  count: "0"
+  message: "User is able to search assessment with Invalid text"
 
 test_04:
-     message: "User is not able to view the in-progress assessment"
+  message: "User is not able to view the in-progress assessment"
 
 test_05:
-     message: "User is not able to view the completed assessment"
+  message: "User is not able to view the completed assessment"
 
 test_06:
-     message: "Verify User is not able to Clear response functionality of Assessment"
+  message: "Verify User is not able to Clear response functionality of Assessment"
 
 test_07:
-     message: "USer is not able to Discard functionality of new Assessment"
+  message: "USer is not able to Discard functionality of new Assessment"
 
 test_08:
-     message: "User is not able to Submit assessment without any text response"
+  message: "User is not able to Submit assessment without any text response"
 test_09:
-     message: "User is able to submit the response with invalid text"
+  message: "User is able to submit the response with invalid text"
 test_10:
-     message: "User is not able to re-assess the assessment"
+  message: "User is not able to re-assess the assessment"
 test_11:
-     message: "User is not able to View and edit the saved assessment"
+  message: "User is not able to View and edit the saved assessment"
 test_12:
-     message: "User is not able to view the completed and In-progress section available under Assessment for
+  message: "User is not able to view the completed and In-progress section available under Assessment for
      a patient"
 test_13:
-     message: "User is not able to create new assessment."
+  message: "User is not able to create new assessment."
 test_14:
-     message: "User is not able to submit the new assessment"
+  message: "User is not able to submit the new assessment"
 test_15:
-     message: "User is not able to discard the assessment"
+  message: "User is not able to discard the assessment"
 test_16:
-     message: "User is not able to switch the assessment"
+  message: "User is not able to switch the assessment"
 test_17:
-     message: "User is not able to submit two different assessment"
+  message: "User is not able to submit two different assessment"

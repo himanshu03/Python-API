@@ -1,8 +1,6 @@
-import json
 import pytest
 import requests
 import yaml
-from numpy.random.mtrand import randint
 
 import conftest
 
@@ -42,6 +40,7 @@ def test_Worklist_TC01(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_02(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the available scheduled task for current date"
@@ -75,6 +74,7 @@ def test_Worklist_02(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_05(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the Click functionality of Scheduled Patient"
@@ -103,6 +103,7 @@ def test_Worklist_05(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_06(Authorization, Base_Url, set_cookie):
     tc_desc = "To Verify the Reassign functionality for Selected Task"
@@ -130,8 +131,7 @@ def test_Worklist_06(Authorization, Base_Url, set_cookie):
         tc_status = "FAIL"
         print(test_data['test_06']['message'])
         raise
-    finally:
-        conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_07(Authorization, Base_Url, set_cookie):
@@ -160,6 +160,7 @@ def test_Worklist_07(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_08(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify all the Task on ALL section under activity received"
@@ -185,6 +186,7 @@ def test_Worklist_08(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_09(Authorization, Base_Url, set_cookie):
@@ -214,6 +216,7 @@ def test_Worklist_09(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_10(Authorization, Base_Url, set_cookie):
     tc_desc = "To Verify the sort by drop down availability"
@@ -240,6 +243,7 @@ def test_Worklist_10(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_11(Authorization, Base_Url, set_cookie):
@@ -280,6 +284,7 @@ def test_Worklist_11(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_12(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the search should not be reset after changing the date on worklist"
@@ -306,6 +311,7 @@ def test_Worklist_12(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_13(Authorization, Base_Url, set_cookie):
@@ -351,6 +357,7 @@ def test_Worklist_13(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_14(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify user is able to reassign the activity to other user from activities sent of other User"
@@ -392,6 +399,7 @@ def test_Worklist_14(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_15(Authorization, Base_Url, set_cookie):
@@ -444,6 +452,7 @@ def test_Worklist_15(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_16(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to Decline the received referral of other User"
@@ -492,6 +501,7 @@ def test_Worklist_16(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_17(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify that the completed Task should be visible under Completed section"
@@ -518,6 +528,7 @@ def test_Worklist_17(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_18(Authorization, Base_Url, set_cookie):
@@ -547,6 +558,7 @@ def test_Worklist_18(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_19(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the patient is assigned as high priority on Single click"
@@ -571,6 +583,7 @@ def test_Worklist_19(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_20(Authorization, Base_Url, set_cookie):
@@ -597,6 +610,7 @@ def test_Worklist_20(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_21(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to remove priority on triple click"
@@ -621,6 +635,7 @@ def test_Worklist_21(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_22(Authorization, Base_Url, set_cookie):
@@ -647,6 +662,7 @@ def test_Worklist_22(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_23(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to Remove priority of multiple patient in One time"
@@ -671,6 +687,7 @@ def test_Worklist_23(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_24(Authorization, Base_Url, set_cookie):
@@ -698,6 +715,7 @@ def test_Worklist_24(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_25(Authorization, Base_Url, set_cookie):
@@ -738,6 +756,7 @@ def test_Worklist_25(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_26(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the HHSHCC risk sorting"
@@ -776,6 +795,7 @@ def test_Worklist_26(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_27(Authorization, Base_Url, set_cookie):
@@ -816,6 +836,7 @@ def test_Worklist_27(Authorization, Base_Url, set_cookie):
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
+
 @pytest.mark.sanity
 def test_Worklist_28(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the CDPS risk sorting"
@@ -854,6 +875,7 @@ def test_Worklist_28(Authorization, Base_Url, set_cookie):
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
 
 @pytest.mark.sanity
 def test_Worklist_29(Authorization, Base_Url, set_cookie):

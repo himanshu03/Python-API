@@ -1,66 +1,66 @@
 test_care: "incare/worklist"
 
 test_01:
-     message: "User is not able to see his daily progress on User's Workqueue under Todos"
+  message: "User is not able to see his daily progress on User's Workqueue under Todos"
 
 test_02:
-     message: "User is not able to verify the available scheduled task for current date"
+  message: "User is not able to verify the available scheduled task for current date"
 
 test_03:
-     message: "User is not able to the available scheduled task for current date"
+  message: "User is not able to the available scheduled task for current date"
 test_04:
-     count: "0"
+  count: "0"
 test_05:
-     message: "Patient with selected care protocol is not visible"
+  message: "Patient with selected care protocol is not visible"
 test_06:
-     message: "User is not able to click on the re-assign functionality of the task"
+  message: "User is not able to click on the re-assign functionality of the task"
 test_07:
-     message: "User is not able to view pending task"
+  message: "User is not able to view pending task"
 test_08:
-     message: "User is not able to view pending task under activity sent tab"
+  message: "User is not able to view pending task under activity sent tab"
 test_09:
-     message: "User is not able to view all task under all section of activity received"
+  message: "User is not able to view all task under all section of activity received"
 test_10:
-     message: "User is not able to sort the data"
+  message: "User is not able to sort the data"
 test_11:
-     message: "User is not able to sort the pcp data"
+  message: "User is not able to sort the pcp data"
 
 test_12:
-     message: "Search has been reset after changing the date"
+  message: "Search has been reset after changing the date"
 test_13:
-     message: "User is not able to edit the message for sent activites"
+  message: "User is not able to edit the message for sent activites"
 test_14:
-     message: "User is not able to reassign the task from other user activities"
+  message: "User is not able to reassign the task from other user activities"
 test_15:
-     message: "User is not able to accept the received referral of other User"
+  message: "User is not able to accept the received referral of other User"
 test_16:
-     message: "User is not able to decline the received referral of other User"
+  message: "User is not able to decline the received referral of other User"
 test_17:
-     message: "User is not able to view the completed activity"
+  message: "User is not able to view the completed activity"
 test_18:
-     message: "User is not able to add note for a patient"
+  message: "User is not able to add note for a patient"
 test_19:
-     message: "User is not able to change the priority from low to high"
+  message: "User is not able to change the priority from low to high"
 test_20:
-     message: "User is not able to change the priority from high to medium"
+  message: "User is not able to change the priority from high to medium"
 test_21:
-     message: "User is not able to change the priority from medium to None"
+  message: "User is not able to change the priority from medium to None"
 test_22:
-     message: "User is not able to change the priority of multiple patients"
+  message: "User is not able to change the priority of multiple patients"
 test_23:
-     message: "User is not able to remove the priority of multiple patients"
+  message: "User is not able to remove the priority of multiple patients"
 test_24:
-     message: "User is not able to verify the care protocol filter"
+  message: "User is not able to verify the care protocol filter"
 test_25:
-     message: "User is not able to verify the sorting on Insurance"
+  message: "User is not able to verify the sorting on Insurance"
 test_26:
-     message: "User is not able to verify the sorting on HHSHCC Risk"
+  message: "User is not able to verify the sorting on HHSHCC Risk"
 test_27:
-     message: "User is not able to verify the sorting on CDPS Risk"
+  message: "User is not able to verify the sorting on CDPS Risk"
 test_28:
-     message: "User is not able to verify the sorting on CMSHCC Risk"
+  message: "User is not able to verify the sorting on CMSHCC Risk"
 test_29:
-     message: "User is not able to verify the sorting on SVI Risk"
+  message: "User is not able to verify the sorting on SVI Risk"
 
 
 

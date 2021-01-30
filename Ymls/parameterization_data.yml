@@ -1,0 +1,4 @@
+Conifer:
+  test_01:
+    uri: ""
+    payload: "select fn||ln||gn from l2.pd_activity where st = 'Clinical' and cltp =  'result' and (dob is null )  and (fn is not null) and (ln is not null) and (gn is not null) and sstp = source_var and acoid = aco_var group  by fn||ln||gn"

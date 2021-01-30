@@ -9,18 +9,18 @@ with open(os.getcwd() + "/infra.conf") as config_file:
     conf = json.load(config_file)
 
 with open('Logs/log_file.log', 'r') as file:
-    logs = file.read().replace('\\n','\n')
+    logs = file.read().replace('\\n', '\n')
 
 result = logs.find("collecting")
 
-text = "*`InCare Sanity Results`*\n" +logs[result:-1]
+text = "*`InCare Sanity Results`*\n" + logs[result:-1]
 
-url= conf[sys.argv[1]]["chat_url"]
+url = conf[sys.argv[1]]["chat_url"]
 payload = {
-        "text":text
-      }
+    "text": text
+}
 
-payload=json.dumps(payload)
-headers={'Content-Type':'application/json'}
-response=requests.post(url,headers=headers,data=payload)
+payload = json.dumps(payload)
+headers = {'Content-Type': 'application/json'}
+response = requests.post(url, headers=headers, data=payload)
 print('\nscript end')

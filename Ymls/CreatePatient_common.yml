@@ -1,0 +1,9 @@
+test_patient: "patients"
+
+test_01:
+  "Not able to create patient"
+test_02:
+  "Not able to search user"
+
+
+

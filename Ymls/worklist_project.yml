@@ -1,287 +1,287 @@
 Orlando:
-   test_01:
-      uri: "/todos/_count"
-      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
-   test_02:
-      uri: "/todos/_search"
-      empi: "P287"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_05:
-      uri: "/referrals/received"
-      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
-   test_06:
-      uri: "/referrals/_bulk"
-      payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
-   test_07:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_08:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_09:
-      uri: "/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_10:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_11:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_01:
+    uri: "/todos/_count"
+    payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+  test_02:
+    uri: "/todos/_search"
+    empi: "P287"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_05:
+    uri: "/referrals/received"
+    payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+  test_06:
+    uri: "/referrals/_bulk"
+    payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+  test_07:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_08:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_09:
+    uri: "/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_10:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_11:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
 
-   test_12:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"provider\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_13:
-      uri: "/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      uri1: "/referrals/"
-      payload1: "{\"message\":\"Please accept this task on monday1.\"}"
-   test_14:
-      uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload: "{\"reassignedTo\":\"c8221e60-ff0f-443b-acf8-2761cb45fd96\",\"message\":\"Please accept this task on
+  test_12:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"provider\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_13:
+    uri: "/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    uri1: "/referrals/"
+    payload1: "{\"message\":\"Please accept this task on monday1.\"}"
+  test_14:
+    uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload: "{\"reassignedTo\":\"c8221e60-ff0f-443b-acf8-2761cb45fd96\",\"message\":\"Please accept this task on
       Sunday\"}"
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,
       \"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
 
-   test_15:
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload1: ""
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_15:
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload1: ""
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
 
 
-   test_16:
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload1: ""
+  test_16:
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload1: ""
 
-   test_17:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1598207400000,\"to\":1598293799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
-   test_18:
-      uri: "/incare/patients/P266/notes"
-      payload: "{\"type\":\"NOTE\",\"text\":\"test note\"}"
-   test_19:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":2,\"all\":false}"
-   test_20:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":1,\"all\":false}"
-   test_21:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":0,\"all\":false}"
-   test_22:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":1,\"all\":false}"
-   test_23:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":0,\"all\":false}"
-   test_24:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598984999999,\"careProtocolIdList\":[],\"adHocTaskIdList\":[\"5ec62c548815c21e329a4552\"],\"sort\":{\"key\":\"fullName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_25:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_17:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1598207400000,\"to\":1598293799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
+  test_18:
+    uri: "/incare/patients/P266/notes"
+    payload: "{\"type\":\"NOTE\",\"text\":\"test note\"}"
+  test_19:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":2,\"all\":false}"
+  test_20:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":1,\"all\":false}"
+  test_21:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":0,\"all\":false}"
+  test_22:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":1,\"all\":false}"
+  test_23:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":0,\"all\":false}"
+  test_24:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598984999999,\"careProtocolIdList\":[],\"adHocTaskIdList\":[\"5ec62c548815c21e329a4552\"],\"sort\":{\"key\":\"fullName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_25:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
-   test_26:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_26:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
 
-   test_27:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_27:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                       \"careProtocolIdList\":[],\"sort\":{\"key\":\"cdps_risk\",\"order\":\"ASC\"},
                       \"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                        \"careProtocolIdList\":[],\"sort\":{\"key\":\"cdps_risk\",\"order\":\"DESC\"},
                                        \"excludeReferredTodos\":true}"
-   test_28:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_28:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                       \"careProtocolIdList\":[],\"sort\":{\"key\":\"cmshcc_risk\",\"order\":\"ASC\"},
                                       \"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                        \"careProtocolIdList\":[],\"sort\":{\"key\":\"cmshcc_risk\",\"order\":\"DESC\"},
                                        \"excludeReferredTodos\":true}"
-   test_29:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"svi\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
-   test_30:
-      uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_31:
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      payload1: ""
+  test_29:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"svi\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
+  test_30:
+    uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_31:
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    payload1: ""
 
 
 StLukes:
-   test_01:
-      uri: "/todos/_count"
-      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
-   test_02:
-      uri: "/todos/_search"
-      empi: "P287"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_05:
-      uri: "/referrals/received"
-      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
-   test_06:
-      uri: "/referrals/_bulk"
-      payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
-   test_07:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_08:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_09:
-      uri: "/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_10:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_11:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_01:
+    uri: "/todos/_count"
+    payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+  test_02:
+    uri: "/todos/_search"
+    empi: "P287"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_05:
+    uri: "/referrals/received"
+    payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+  test_06:
+    uri: "/referrals/_bulk"
+    payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+  test_07:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_08:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_09:
+    uri: "/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_10:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_11:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
 
-   test_12:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"provider\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_13:
-      uri: "/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      uri1: "/referrals/"
-      payload1: "{\"message\":\"Please accept this task on monday1.\"}"
-   test_14:
-      uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload: "{\"reassignedTo\":\"c8221e60-ff0f-443b-acf8-2761cb45fd96\",\"message\":\"Please accept this task on
+  test_12:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"provider\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"pcpName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_13:
+    uri: "/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    uri1: "/referrals/"
+    payload1: "{\"message\":\"Please accept this task on monday1.\"}"
+  test_14:
+    uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload: "{\"reassignedTo\":\"c8221e60-ff0f-443b-acf8-2761cb45fd96\",\"message\":\"Please accept this task on
       Sunday\"}"
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,
       \"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
 
-   test_15:
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload1: ""
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_15:
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload1: ""
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
 
 
-   test_16:
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
-      payload1: ""
+  test_16:
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    uri1: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/"
+    payload1: ""
 
-   test_17:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1598207400000,\"to\":1598293799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
-   test_18:
-      uri: "/incare/patients/P266/notes"
-      payload: "{\"type\":\"NOTE\",\"text\":\"test note\"}"
-   test_19:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":2,\"all\":false}"
-   test_20:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":1,\"all\":false}"
-   test_21:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":0,\"all\":false}"
-   test_22:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":1,\"all\":false}"
-   test_23:
-      uri: "/todos/priority/_bulk"
-      payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":0,\"all\":false}"
-   test_24:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598984999999,\"careProtocolIdList\":[],\"adHocTaskIdList\":[\"5ec62c548815c21e329a4552\"],\"sort\":{\"key\":\"fullName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_25:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_17:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1598207400000,\"to\":1598293799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"dueOn\",\"order\":\"DESC\"},\"excludeReferredTodos\":false}"
+  test_18:
+    uri: "/incare/patients/P266/notes"
+    payload: "{\"type\":\"NOTE\",\"text\":\"test note\"}"
+  test_19:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":2,\"all\":false}"
+  test_20:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":1,\"all\":false}"
+  test_21:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\"],\"priority\":0,\"all\":false}"
+  test_22:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":1,\"all\":false}"
+  test_23:
+    uri: "/todos/priority/_bulk"
+    payload: "{\"todoIdList\":[\"5f4cc2b88815c263b4abdf0c\",\"5f4de0428815c264062a40cb\",\"5f4756088815c264062a403c\",\"5f44a5cd8815c22ce07c32c2\",\"5f33d14a8815c204e5cb383a\",\"5f33d0928815c204e151725c\",\"5f3f5fc18815c22ce07c325d\",\"5f4c8ecd8815c263b4abdeeb\",\"5f4de03e8815c263f38c6571\",\"5f4c8eca8815c263c01dbf64\",\"5f489a418815c263f38c6557\",\"5f4752098815c264062a401b\",\"5f4756058815c264062a4036\",\"5f4751f78815c263b2c54761\",\"5f4748bf8815c263c1d9f8dc\",\"5f43543f8815c22d1c314ea1\",\"5f3cbccb8815c22cd6fc2872\",\"5f3230d48815c204e7cd6d48\",\"5f30df438815c204e679ca5e\",\"5f2ceabb8815c204ce3a774c\",\"5f2a47c68815c204e5cb3739\",\"5f3625408815c204e48b8479\",\"5f23b03e8815c20fed04a951\",\"5f2b99438815c204c844d7dd\",\"5f3382418815c204e01bb49a\",\"5f1fcf878815c20fe0b43c78\",\"5f1fbbc08815c20fde4ab90e\",\"5f1e6a5c8815c20fe672d082\",\"5f3e0e3a8815c22cd6fc28e4\",\"5f210d408815c20857c2cb52\",\"5f1924688815c20feae11411\",\"5f34d3c98815c204e5cb384d\",\"5f28f6468815c204e7cd6c00\",\"5f17d2d28815c20fe5138581\",\"5f45f73b8815c2018a3a1be3\",\"5f16ce308815c20fe8b66604\",\"5f225ec58815c20ffe22c55f\",\"5f44a5c98815c22d1a8e15c9\",\"5f16cd0e8815c20fe1f36bb2\",\"5f16cb128815c20feae11396\",\"5f3f5fbf8815c22ce309df73\",\"5f4354418815c22ce309dfd4\",\"5f3a19c98815c204ce3a7826\",\"5f27a4be8815c20fe1f36def\",\"5f3b6b5c8815c204e48b84ab\",\"5f1a75cb8815c20fe8b6663d\"],\"priority\":0,\"all\":false}"
+  test_24:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598984999999,\"careProtocolIdList\":[],\"adHocTaskIdList\":[\"5ec62c548815c21e329a4552\"],\"sort\":{\"key\":\"fullName\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_25:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
-   test_26:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_26:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
       \"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"hhshcc_risk\",\"order\":\"DESC\"},\"excludeReferredTodos\":true}"
 
-   test_27:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_27:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                       \"careProtocolIdList\":[],\"sort\":{\"key\":\"cdps_risk\",\"order\":\"ASC\"},
                       \"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                        \"careProtocolIdList\":[],\"sort\":{\"key\":\"cdps_risk\",\"order\":\"DESC\"},
                                        \"excludeReferredTodos\":true}"
-   test_28:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+  test_28:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                       \"careProtocolIdList\":[],\"sort\":{\"key\":\"cmshcc_risk\",\"order\":\"ASC\"},
                                       \"excludeReferredTodos\":true}"
-      payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
+    payload1: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,
                                        \"careProtocolIdList\":[],\"sort\":{\"key\":\"cmshcc_risk\",\"order\":\"DESC\"},
                                        \"excludeReferredTodos\":true}"
-   test_29:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"svi\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
-   test_30:
-      uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_31:
-      uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-      payload1: ""
+  test_29:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"COMPLETED\",\"limit\":20,\"offset\":0,\"from\":1597861800000,\"to\":1597948199999,\"careProtocolIdList\":[261,271,260,270,259],\"sort\":{\"key\":\"svi\",\"order\":\"ASC\"},\"excludeReferredTodos\":false}"
+  test_30:
+    uri: "/users/f3dcc201-5cfd-476c-a916-f9e714e957f8/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_31:
+    uri: "/users/b0f4d743-4257-4793-a43d-b62384551f9a/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+    payload1: ""
 
 Sanitas:
-   test_01:
-      uri: "/todos/_count"
-      payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
-   test_02:
-      uri: "/todos/_search"
-      empi: "P287"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
-   test_05:
-      uri: "/referrals/received"
-      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
-   test_06:
-      uri: "/referrals/_bulk"
-      payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
-   test_07:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_08:
-      uri: "/referrals/received"
-      payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_09:
-      uri: "/referrals/sent"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
-   test_10:
-      uri: "/todos/_search"
-      payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_01:
+    uri: "/todos/_count"
+    payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+  test_02:
+    uri: "/todos/_search"
+    empi: "P287"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1599157799999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"insurance\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
+  test_05:
+    uri: "/referrals/received"
+    payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+  test_06:
+    uri: "/referrals/_bulk"
+    payload: "{\"assignedTo\":\"b0f4d743-4257-4793-a43d-b62384551f9a\",\"todoIdList\":[\"5f4f7e088815c263bf33ad1c\"],\"message\":\"Please accept this task.\",\"checkAccess\":true,\"excludeReferredTodos\":true,\"skipError\":true}"
+  test_07:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_08:
+    uri: "/referrals/received"
+    payload: "{\"searchTerm\":\"\",\"status\":\"\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_09:
+    uri: "/referrals/sent"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"sort\":{\"key\":\"createdOn\",\"order\":\"DESC\"}}"
+  test_10:
+    uri: "/todos/_search"
+    payload: "{\"searchTerm\":\"\",\"status\":\"PENDING\",\"limit\":20,\"offset\":0,\"to\":1598898599999,\"careProtocolIdList\":[],\"sort\":{\"key\":\"priority\",\"order\":\"ASC\"},\"excludeReferredTodos\":true}"
 
 
 
 CH:
-   test_01:
-     uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_count"
-     payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
-   test_02:
-      uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_search"
-      payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
-   test_05:
-      uri: "/referrals/received"
-      payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
+  test_01:
+    uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_count"
+    payload: "{\r\n    \"to\": 1593714599999,\r\n    \"excludeReferredTodos\": true,\r\n    \"careProtocolIdList\": []\r\n}"
+  test_02:
+    uri: "/users/4fa2d9ae-25dd-49ef-a485-33bd7721b749/todos/_search"
+    payload: "{\r\n    \"searchTerm\": \"\",\r\n    \"status\": \"PENDING\",\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"to\": 1593714599999,\r\n    \"careProtocolIdList\": [],\r\n    \"sort\": {\r\n        \"key\": \"dueOn\",\r\n        \"order\": \"DESC\"\r\n    },\r\n    \"excludeReferredTodos\": true\r\n}"
+  test_05:
+    uri: "/referrals/received"
+    payload: "{\n    \"searchTerm\": \"TCM\",\n    \"status\": \"PENDING\",\n    \"limit\": 20,\n    \"offset\": 0,\n    \"sort\": {\n        \"key\": \"createdOn\",\n        \"order\": \"DESC\"\n    }\n}"
 

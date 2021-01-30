@@ -1,75 +1,75 @@
 test_care: "/incare/patients"
 test_01:
-      message: "Not able to navigate to Care Management"
+  message: "Not able to navigate to Care Management"
 
 test_02:
-      message: "Activities not available in care management_health_modules"
+  message: "Activities not available in care management_health_modules"
 
 test_03:
-      message: "Care management goals are not visible"
+  message: "Care management goals are not visible"
 
 test_04:
-      message: "Care management Adhoc task is not visible"
+  message: "Care management Adhoc task is not visible"
 
 test_05:
-      message: "Legacy timeline is not visible"
+  message: "Legacy timeline is not visible"
 
 test_06:
-      text: "API Health check for call note"
-      noteType: "CALL"
-      message: "User is not able to add call note"
+  text: "API Health check for call note"
+  noteType: "CALL"
+  message: "User is not able to add call note"
 
 test_07:
-      text: "Visit Ad-hoc Task"
-      visitType: "HRA (Health Risk Assessment)"
-      noteType: "VISIT"
-      message: "User is not able to create visit Adhoc Task"
+  text: "Visit Ad-hoc Task"
+  visitType: "HRA (Health Risk Assessment)"
+  noteType: "VISIT"
+  message: "User is not able to create visit Adhoc Task"
 
 test_08:
-      text: "Ad-hoc Task \"API Health check for Note\""
-      noteType: "NOTE"
-      message: "User is not able to create Note Adhoc Task"
+  text: "Ad-hoc Task \"API Health check for Note\""
+  noteType: "NOTE"
+  message: "User is not able to create Note Adhoc Task"
 
 test_09:
-      status: "Success"
-      type: "AddAdHocTask"
-      note: "API Health Check New Adhoc Task"
-      task: "Provider Consultation"
-      message: "User is not able to create new Task"
+  status: "Success"
+  type: "AddAdHocTask"
+  note: "API Health Check New Adhoc Task"
+  task: "Provider Consultation"
+  message: "User is not able to create new Task"
 
 test_10:
-      text: "API Health Check for Letter"
-      noteType: "LETTER_SENT"
-      message: "User is not able to create Letter"
+  text: "API Health Check for Letter"
+  noteType: "LETTER_SENT"
+  message: "User is not able to create Letter"
 
 test_11:
-      message: "User is not able to select Care Protocol in All Activity Filter"
+  message: "User is not able to select Care Protocol in All Activity Filter"
 
 test_12:
-      message: "User is not able to select Care Protocol Unit in All Activity Filter"
+  message: "User is not able to select Care Protocol Unit in All Activity Filter"
 
 test_13:
-      message: "User is not able to select Task in All Activity Filter"
+  message: "User is not able to select Task in All Activity Filter"
 
 test_14:
-      message: "User is not able to select notes in All Activity Filter"
+  message: "User is not able to select notes in All Activity Filter"
 
 test_15:
-      message: "User is not able to select Call in All Activity Filter"
+  message: "User is not able to select Call in All Activity Filter"
 
 test_16:
-      message: "User is not able to select Visit in All Activity Filter"
+  message: "User is not able to select Visit in All Activity Filter"
 test_17:
-      message: "User is not able to select Letters in All Activity Filter"
+  message: "User is not able to select Letters in All Activity Filter"
 
 test_18:
-      message: "User is not able to select Encounters in All Activity Filter"
+  message: "User is not able to select Encounters in All Activity Filter"
 
 test_19:
-      message: "Not able to find Assign care protocol Tab"
+  message: "Not able to find Assign care protocol Tab"
 
 test_20:
-      message: "Not able to Assign care protocol"
+  message: "Not able to Assign care protocol"
 
 test_21:
-      message: "Not able to refer and assign care protocol"
+  message: "Not able to refer and assign care protocol"

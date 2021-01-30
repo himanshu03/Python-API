@@ -1,0 +1,10 @@
+ADV:
+  test_01:
+    uri: ""
+    payload: "{\"source_type\":\"manual_empi\",\"source_subtype\":\"Patient360\",\"first_name\":\"Test\",
+      \"middle_name\":\"\",\"last_name\":\"Innovaccerthree\",\"date_of_birth\":\"1992-09-20\",\"gender\":\"M\",
+      \"aco_id\":\"00000\",\"aco_name\":\"Physicians of America\",\"region_id\":\"1006\",\"region_name\":\"CIN Affiliates- East\",\"organization_id\":\"1849\",\"organization_name\":\"Carcamo Pediatrics\",\"facility_id\":\"10245\",\"facility_name\":\"Carcamo Pediatrics\",\"provider_id\":\"1144335514\",\"provider_name\":\"CABALLERO JAIME \",\"payer_id\":\"001\",\"payer_name\":\"Payer1\",\"plan_id\":\"001\",\"plan_name\":\"Plan1\"}"
+
+  test_02:
+    uri: "users?limit=50&offset=0&q=himanshu&sort_by=name&status=active"
+    payload: ""

@@ -1,3 +1,4 @@
+import pytest
 import requests
 import yaml
 
@@ -10,6 +11,7 @@ with open("/Users/it000621/PycharmProjects/incareapisautomation/Ymls/worklist_pr
     project_data = yaml.load(project)
 
 
+@pytest.mark.sanity
 def test_Worklist_TC01(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify that the User can see his daily progress on User's Workqueue under Todos"
     tc_status = "FAIL"
@@ -39,6 +41,7 @@ def test_Worklist_TC01(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_02(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the available scheduled task for current date"
     tc_status = "FAIL"
@@ -72,6 +75,7 @@ def test_Worklist_02(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_05(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the Click functionality of Scheduled Patient"
     tc_status = "FAIL"
@@ -100,6 +104,7 @@ def test_Worklist_05(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_06(Authorization, Base_Url, set_cookie):
     tc_desc = "To Verify the Reassign functionality for Selected Task"
     tc_status = "FAIL"
@@ -126,10 +131,9 @@ def test_Worklist_06(Authorization, Base_Url, set_cookie):
         tc_status = "FAIL"
         print(test_data['test_06']['message'])
         raise
-    finally:
-        conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_07(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the pending task on Pending section under activity received"
     tc_status = "FAIL"
@@ -157,6 +161,7 @@ def test_Worklist_07(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_08(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify all the Task on ALL section under activity received"
     tc_status = "FAIL"
@@ -183,6 +188,7 @@ def test_Worklist_08(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_09(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the pending task on Pending section under activity sent"
     tc_status = "FAIL"
@@ -211,6 +217,7 @@ def test_Worklist_09(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_10(Authorization, Base_Url, set_cookie):
     tc_desc = "To Verify the sort by drop down availability"
     tc_status = "FAIL"
@@ -238,6 +245,7 @@ def test_Worklist_10(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_11(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the CDPS risk sorting"
     tc_status = "FAIL"
@@ -277,6 +285,7 @@ def test_Worklist_11(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_12(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the search should not be reset after changing the date on worklist"
     tc_status = "FAIL"
@@ -304,6 +313,7 @@ def test_Worklist_12(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_13(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify user is able to edit the message of sent activities from other user Activity sent section"
     tc_status = "FAIL"
@@ -348,6 +358,7 @@ def test_Worklist_13(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_14(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify user is able to reassign the activity to other user from activities sent of other User"
     tc_status = "FAIL"
@@ -390,6 +401,7 @@ def test_Worklist_14(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_15(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to accept the received referral of other User"
     tc_status = "FAIL"
@@ -441,6 +453,7 @@ def test_Worklist_15(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_16(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to Decline the received referral of other User"
     tc_status = "FAIL"
@@ -489,6 +502,7 @@ def test_Worklist_16(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_17(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify that the completed Task should be visible under Completed section"
     tc_status = "FAIL"
@@ -516,6 +530,7 @@ def test_Worklist_17(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_18(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the Add Note funtionality for scheduled task"
     tc_status = "FAIL"
@@ -544,6 +559,7 @@ def test_Worklist_18(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_19(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the patient is assigned as high priority on Single click"
     tc_status = "FAIL"
@@ -569,6 +585,7 @@ def test_Worklist_19(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_20(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the patient is assigned as medium priority on Double click"
     tc_status = "FAIL"
@@ -594,6 +611,7 @@ def test_Worklist_20(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_21(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to remove priority on triple click"
     tc_status = "FAIL"
@@ -619,6 +637,7 @@ def test_Worklist_21(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_22(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to Assign priority of multiple patient in One time"
     tc_status = "FAIL"
@@ -644,6 +663,7 @@ def test_Worklist_22(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_23(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify User is able to Remove priority of multiple patient in One time"
     tc_status = "FAIL"
@@ -669,6 +689,7 @@ def test_Worklist_23(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_24(Authorization, Base_Url, set_cookie):
     tc_desc = "To verify the Care protocol filter"
     tc_status = "FAIL"
@@ -696,6 +717,7 @@ def test_Worklist_24(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_25(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the CDPS risk sorting"
     tc_status = "FAIL"
@@ -735,6 +757,7 @@ def test_Worklist_25(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_26(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the HHSHCC risk sorting"
     tc_status = "FAIL"
@@ -774,6 +797,7 @@ def test_Worklist_26(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_27(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the CDPS risk sorting"
     tc_status = "FAIL"
@@ -813,6 +837,7 @@ def test_Worklist_27(Authorization, Base_Url, set_cookie):
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
 
 
+@pytest.mark.sanity
 def test_Worklist_28(Authorization, Base_Url, set_cookie):
     tc_desc = "Verify the CDPS risk sorting"
     tc_status = "FAIL"
@@ -847,6 +872,34 @@ def test_Worklist_28(Authorization, Base_Url, set_cookie):
     except Exception as e:
         tc_status = "FAIL"
         print(test_data['test_28']['message'])
+        raise
+    finally:
+        conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
+
+
+@pytest.mark.sanity
+def test_Worklist_29(Authorization, Base_Url, set_cookie):
+    tc_desc = "Verify the SVI risk sorting"
+    tc_status = "FAIL"
+    tc_name = "Worklist_TC29"
+    tc_priority = "High"
+
+    try:
+        url = Base_Url + test_data['test_care'] + project_data[conftest.cmd_arg]["test_29"]["uri"]
+        print(url)
+        payload = project_data[conftest.cmd_arg]["test_29"]["payload"]
+        headers = {
+            'Authorization': Authorization,
+            'Content-Type': 'application/json',
+            'Cookie': set_cookie
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        assert response.status_code == 200
+        assert response.json()['metadata']['count'] >= 0
+        tc_status = "PASS"
+    except Exception as e:
+        tc_status = "FAIL"
+        print(test_data['test_29']['message'])
         raise
     finally:
         conftest.updatedb(tc_name, tc_desc, tc_status, tc_priority)
